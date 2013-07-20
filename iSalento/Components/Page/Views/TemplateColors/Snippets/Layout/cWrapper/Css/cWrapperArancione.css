@@ -1,0 +1,29 @@
+/* CSS template_sezione_arancione  */
+
+
+/*************************************************************/
+/* REGOLE GENERALI di TEMPLATE arancione                       
+/*************************************************************/
+.immagine_body_arancione{
+	background: url(../Images/linea_grafica_arancione.jpg) repeat-x #fff;
+}
+
+body .imagine_body{
+ 	background: url(../Images/linea_grafica_base.jpg) repeat-x #fff;
+}
+#testata #image {
+	border-left:2px solid #ff9966;
+	border-right:2px solid #ff9966;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#ff3300;
+}
+
+#contenuto h1,#contenuto h1 a{ /*TITOLO DELLA PAGINA*/
+	color:#cc3300;
+}
+
+#contenuto a:hover img{
+	border:1px solid #ff3300;
+}

@@ -1,0 +1,16 @@
+/*COLONNA CONTENENTE I 2 DIVS right and left*/
+table.scheda_tecnica .cell_ul ul{
+	margin:0px 0px 0px 15px;
+}
+
+/*DIV LEFT CONTENUTO ALL'INTERNO DELLA COLONNA*/
+table.scheda_tecnica td .cell_ul_left {
+	width:200px;
+	float:left;
+}
+
+/*DIV RIGHT CONTENUTO ALL'INTERNO DELLA COLONNA*/
+table.scheda_tecnica td .cell_ul_right {
+	width:200px;
+	float:right;
+}

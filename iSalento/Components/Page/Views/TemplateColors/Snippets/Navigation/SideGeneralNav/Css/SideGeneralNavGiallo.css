@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per il blocchetto di NAV_LAT GENERICA giallo
+/*---------------------------------------------------------------------------------------------------*/
+/*TITOLO grigio nel blocchetto generico di navigazione laterale*/
+.nav_lat_titolo_giallo{
+	background: url(../Images/nav_lat_titolo_giallo.jpg) no-repeat #ffcc00;  
+	border-bottom:2px solid #daaf03;
+}
+
+.nav_lat_titolo_giallo h4 a{
+	color:#6b5601;
+}
+
+/*CORPO giallo nel blocchetto generico di navigazione laterale*/
+.nav_lat_corpo_giallo{
+	background-color:#fcf2cb;
+}
+
+

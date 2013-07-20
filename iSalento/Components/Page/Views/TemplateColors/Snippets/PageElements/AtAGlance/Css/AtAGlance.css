@@ -1,0 +1,15 @@
+/*************************************************************/
+/* BLOCCHETTO INDICE
+/*************************************************************/
+.contenitore_blocchetto .corpo_blocchetto ul#indice{
+	list-style-type: circle;
+	margin-left:15px;
+}
+
+.contenitore_blocchetto .corpo_blocchetto ul#indice li a{
+	text-decoration:none;
+}
+
+.contenitore_blocchetto .corpo_blocchetto ul#indice li a:hover{
+	text-decoration:underline;
+}

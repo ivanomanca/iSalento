@@ -1,0 +1,35 @@
+/*MODELLO DI SCHEDA TECNICA*/
+
+
+/******************************************************/
+/* REGOLE GENERALI PER LA TABELLA
+/******************************************************/
+table{
+	width:526px;
+}
+
+/*TITOLO ALL'INTERNO DELLA RIGA*/
+table.scheda_tecnica th {
+	font-weight:bold;
+}
+
+/*COLONNA*/
+table.scheda_tecnica td {
+	width:420px;
+}
+
+/*REGOLE COMUNI TRA IL TITOLO ALL'INTERNO DELLA RIGA E LA COLONNA*/
+table.scheda_tecnica th, table.scheda_tecnica td {
+	padding-bottom:0.7em;
+	padding-right:0.5em;
+	text-align:left;
+	vertical-align:top;
+}
+
+/*REGOLE PER ALTERNARE IL COLORE DELLE RIGHE*/
+table tr.colored_row{
+	background-color:#f7f4f4;
+}
+
+
+

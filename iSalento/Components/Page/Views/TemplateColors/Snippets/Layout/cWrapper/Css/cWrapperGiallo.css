@@ -1,0 +1,22 @@
+/* CSS template_sezione_giallo  */
+
+.immagine_body_giallo {
+	background: url(../Images/linea_grafica_gialla.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #fdceca;
+	border-right:2px solid #fdceca;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#ffcc00;
+}
+
+#contenuto h1,#contenuto h1 a{
+	color:#daaf03;
+}
+
+#contenuto a:hover img{
+	border:1px solid #ffcc00;
+}

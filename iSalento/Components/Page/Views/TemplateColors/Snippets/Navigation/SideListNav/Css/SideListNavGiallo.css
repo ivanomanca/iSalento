@@ -1,0 +1,35 @@
+
+/*FORMATTAZIONE SPECIFICA per la sezione GIALLA (attrazioni)*/
+
+.nav_lat_elenco_giallo{	
+	background-color:#fcf2cb;
+}
+
+/*.nav_lat_elenco_giallo,.nav_lat_elenco_verde{
+	margin-bottom:20px;
+}*/
+
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_giallo li.nav_lat_titolo_giallo a{ 
+	background: url(../Images/nav_lat_titolo_giallo.jpg) no-repeat #ffcc00 ;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #daaf03;
+	color:#6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:link{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	color: #6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:visited{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:hover{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	background-color: #fce68e;/*da cambiare a seconda della sezione*/
+}
+

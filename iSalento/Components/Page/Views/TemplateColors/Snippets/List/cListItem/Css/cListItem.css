@@ -1,0 +1,40 @@
+
+
+
+
+/*************************************************************/
+/* Contenitore della foto, titolo e sommario     
+/*************************************************************/
+#contenuto .box_lista .clear_left{
+	clear:left;
+}
+
+.box_lista{
+	background-color:white;
+	margin:0px 10px 25px 10px;
+}
+
+
+/*************************************************************/
+/* FORMATTAZIONE PER I TITOLI DELL'ARTICOLO      
+/*************************************************************/
+/*.box_lista_articolo h2{
+	text-transform:uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	margin-bottom: 10px;
+}*/
+
+
+/************************************************************/
+/* FORMATTAZIONE PER L'ABSTRACT      
+/************************************************************/
+.box_lista p {
+	margin: -10px 0px 0px 5px;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+/*********************************************/
+/* NAVIGAZIONE LATERALE 
+/* Pannello colonna navigazione laterale sx
+/*********************************************/
+#navigazione_laterale {
+	float: left;
+	width:167px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #ccc;  DOPPIO BORDO INFERIORE*/
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}
+
+
+/*********************************************/
+/* NAVIGAZIONE EXTRA 
+/* Pannello colonna navigazione laterale dx
+/*********************************************/
+#extra {
+	float: right;
+	width:167px;
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #ccc;  DOPPIO BORDO INFERIORE*/
+	border-right: #ECF2F2;
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}

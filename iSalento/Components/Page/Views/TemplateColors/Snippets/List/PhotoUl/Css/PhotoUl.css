@@ -1,0 +1,126 @@
+/*************************************************************/
+/* GALLERIA FOTOGRAFICA
+/*************************************************************/
+ul.galleria {
+	list-style-type:none;
+	margin:30px 15px 50px 18px;
+	padding:0px 0px 0px 5px;
+	position:relative;
+	top:30px;
+	overflow: hidden;/*with overflow and widht I can clear float without structural markup !!!!! */
+	width:100%;
+}
+
+/*ombra diagonale delle foto*/
+ul.galleria .ombra_diagonale{
+	background: url(../Images/ombra_diagonale.jpg) no-repeat scroll center bottom;
+	width:140px;
+	height:11px;
+	display:block;
+}
+
+ul.galleria li {
+	float:left;
+	margin:0px 13px 20px 0px;
+	padding:0px 0px 0px 0px;
+	height:150px;
+	width:140px;
+	overflow:hidden;/*nasconde il testo che va fuori dalle dimensioni impostate*/
+}
+
+ul.galleria li img {
+	display:block;
+	border:1px solid;
+    border-color: #CCC #CCC #AAA #CCC;
+	background: #f6f6f6;
+	padding:5px 5px 5px 5px;
+	height:97px;
+	width:128px;
+}
+
+/*TITOLO DELL'IMMAGINE******************/
+.title_img{
+	margin-top:0px;
+	text-align:center;
+	line-height:16px;
+}
+
+#contenuto h5 a{
+	color:#006699;
+}
+
+/*************************************************************/
+/* CARTOLINE HOME
+/*************************************************************/
+
+/*************************************************************************************/
+/* Galleria all'interno del contenuto_top_left
+(regole copiate esattamente dalla GALLERIA_FOTO con qualche modifica di nome e margini)
+/*************************************************************************************/
+ul#focus_home {
+	list-style-type:none;
+	margin:0px 15px 50px 0px;/*margine top e left annullato rispetto alla galleria*/
+	padding:0px 0px 0px 5px;
+	/*position:relative;
+	top:30px;*/
+	overflow: hidden;/*with overflow and widht I can clear float without structural markup !!!!! */
+	width:100%;
+}
+
+/*ombra diagonale delle foto*/
+ul#focus_home .ombra_diagonale{
+	background: url(../Images/ombra_diagonale_home_focus1.gif) no-repeat scroll center bottom;
+	width:130px;
+	height:11px;
+	display:block;
+}
+
+ul#focus_home li {
+	float:left;
+	margin:0px 10px 20px 0px;/*annullato margine dx rispetto alla galleria*/
+	padding:0px 0px 0px 0px;
+	height:140px;
+	width:130px;
+	overflow:hidden;/*nasconde il testo che va fuori dalle dimensioni impostate*/
+}
+
+ul#focus_home li img {
+	display:block;
+	border:1px solid #999999;
+    border-color: #CCC #CCC #AAA #CCC;
+	background: #f6f6f6;
+	padding:4px;
+	height:90px;/*dimensioni dell'immagine ridotte rispetto alla galleria matenendo le proporzioni (rapporto 1,33)*/
+	width:120px;
+}
+/* Immagini 
+#contenuto_top_left .contenitore_blocchetto_home img{
+	border:1px solid #999999;
+	padding:4px;
+	margin-right:8px;/*regola sovrascritta !! 
+}	
+*/
+
+/**** TITOLO DELL'IMMAGINE ****/
+#focus_home .title_img{
+	margin-top:0px;
+	text-align:center;
+	line-height:14px;
+}
+
+#focus_home h5 a{
+	text-decoration: none;
+	color:#26b32e;
+}
+
+#focus_home h5 a:visited{
+	text-decoration: none;
+	color:#26b32e;
+}
+
+#focus_home h5 a:hover{
+	text-decoration: underline;
+	color:#26b32e;
+}
+
+

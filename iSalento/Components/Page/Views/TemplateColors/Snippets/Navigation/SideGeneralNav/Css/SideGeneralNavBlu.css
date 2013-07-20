@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per il blocchetto di NAV_LAT GENERICA blu
+/*---------------------------------------------------------------------------------------------------*/
+/*TITOLO blu nel blocchetto generico di navigazione laterale*/
+.nav_lat_titolo_blu{
+	background: url(../Images/nav_lat_titolo_blu.jpg) no-repeat #0193de;  
+	border-bottom:2px solid #0193de;
+}
+
+.nav_lat_titolo_blu h4 a{
+	color:#ffffff;
+}
+
+/*CORPO blu nel blocchetto generico di navigazione laterale*/
+.nav_lat_corpo_blu{
+	background-color:#d0e6f4;
+}

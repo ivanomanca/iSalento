@@ -1,0 +1,29 @@
+
+/*****************FORMATTAZIONE SPECIFICA PER UN MODELLO di blocchetto elenco BLU ()**********/
+
+.nav_lat_elenco_blu{	
+	background-color:#d0e6f4;
+}
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_blu li.nav_lat_titolo_blu a{ 
+	background: url(../Images/nav_lat_titolo_blu.jpg) no-repeat #0193de;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #0193de;
+	color:#ffffff;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_blu a:link{
+	border-bottom: 1px solid #0193de;/*da cambiare a seconda della sezione*/
+	color: #025c8c;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_blu a:visited{
+	border-bottom: 1px solid #0193de;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #025c8c;/*da cambiare a seconda della sezione     CAMBIATOOOOOO*/
+}
+
+.nav_lat_elenco_blu a:hover{
+	border-bottom: 1px solid #0193de;/*da cambiare a seconda della sezione*/
+	background-color: #a5d2ee;/*da cambiare a seconda della sezione*/
+}

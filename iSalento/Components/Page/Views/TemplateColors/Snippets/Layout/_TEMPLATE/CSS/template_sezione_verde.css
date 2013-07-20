@@ -1,0 +1,83 @@
+/* CSS template_sezione_verde - sezione eventi */
+
+
+/*************************************************************/
+/* REGOLE GENERALI di TEMPLATE verde                       
+/*************************************************************/
+body {
+	background: url(../IMMAGINI/linea_grafica_verde.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #88fc8f;
+	border-right:2px solid #88fc8f;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#26b32e;
+}
+
+#contenuto h1,#contenuto h1 a{ /*TITOLO DELLA PAGINA*/
+	color:#238a1d;
+}
+
+/*DA RIVEDERE verificare se deve stare nel css di template o della scheda o lista, anche sezione gialla - FORSE INUTILE*/
+#contenuto a:visited{ 
+	text-decoration:underline;
+}
+
+#contenuto a:hover{ 
+	text-decoration:underline;
+}
+
+#contenuto h1 a:visited, #contenuto h2 a:visited, #contenuto h3 a:visited,#contenuto h4 a:visited  { 
+	text-decoration: none;
+}
+
+#contenuto h1 a:hover, #contenuto h2 a:hover, #contenuto h3 a:hover,#contenuto h4 a:hover { 
+	text-decoration: underline;
+}
+/********************************************************************************************************/
+
+#contenuto a:hover img{
+	border:1px solid #26b32e;
+}
+
+
+
+/*************************************************************/
+/* REGOLE per il MODELLO LISTE                          
+/*************************************************************/
+
+/*************************************************************/
+/* TITOLO del blocchetto generico    
+/*************************************************************/
+.contenitore_blocchetto .intestazione_blocchetto{
+	background-color:#bbfbbf;/*da cambiare a seconda della sezione*/
+}
+
+.contenitore_blocchetto .intestazione_blocchetto h2{
+	border-bottom:2px solid #26B32E;/*da cambiare a seconda della sezione*/
+}
+
+/*************************************************************/
+/* TITOLO dello SPECIALE    
+/*************************************************************/
+.contenitore_blocchetto #titolo_speciale h2{
+	color:#ffffff;
+	background-color:#26B32E;
+	background:#26b32e url(../IMMAGINI/top_intestazione_blocchetto_speciale_verde.jpg) no-repeat top;
+}
+
+
+.contenitore_blocchetto .intestazione_blocchetto{
+	background:#bbfbbf url(../IMMAGINI/top_intestazione_blocchetto_verde.jpg) no-repeat top;
+}
+
+/*--------------------------------------------------------------*/
+/* CORPO DELL'ARTICOLO   
+/*--------------------------------------------------------------*/
+#contenuto .corpo_articolo h3{
+	border-bottom:1px solid #26B32E;/*sottolineatura per ogni titoletto dell'articolo*/
+}
+

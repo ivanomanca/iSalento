@@ -1,0 +1,87 @@
+
+/* Single Top Nav tab */
+#point li {
+	display:table-cell;
+	margin:0;
+	padding:0;
+}
+#point li.first_tab_img {
+	background:  url(../Images/angolo_sx.jpg) no-repeat left bottom;
+}
+#point li.last_tab_img {
+	background: url(../Images/angolo_dx.jpg) no-repeat right bottom;
+}
+
+/**
+ * Tabs colors
+ */
+#point li#nero {
+	/*background:  url(../Images/angolo_sx.jpg) no-repeat left bottom;*/
+	border-top:5px solid #000;
+}
+
+#point li#giallo {
+	border-top:5px solid #FC0;
+}
+
+#point li#verde {
+	border-top:5px solid #26b32e;
+}
+
+#point li#blu {
+	border-top:5px solid #0193de;
+}
+
+#point li#arancione {
+	border-top:5px solid #e67520;
+}
+
+#point li#celeste {
+	border-top:5px solid #66cccc;
+}
+
+#point li#rosa {
+	border-top:5px solid #df4bab;
+}
+
+#point li#grigio {
+	border-top:5px solid #333;
+	/*background: url(../Images/angolo_dx.jpg) no-repeat right bottom;*/
+}
+
+/**
+ * Tab links
+ */
+#point li a {
+	float:left;
+	font-family:arial;
+	font-size:11px;
+	letter-spacing:1px;
+	padding:10px 13px;
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+/* Overlay the Tab with an image when 'link over' or 'current' section */
+#point li a:hover, #point li a.current {
+	background:  url(../Images/down_arrow_nero.png) no-repeat center top; /*puntatore*/
+}
+
+/*-----TABS-----*/
+/*LINKS TAB over*/
+#point li a.over {
+	/*border-bottom:medium none;*/
+padding-bottom:7px;
+	position:relative;
+	z-index:3;
+}
+
+/*barra subs e link dei TABs over= ripeti l'immagine background*/
+#point ul, li.over a {
+	background-repeat:repeat-x;
+}
+
+/*i links nei list items (li) in generale 
+li.over a {
+background-position:center top;
+}*/

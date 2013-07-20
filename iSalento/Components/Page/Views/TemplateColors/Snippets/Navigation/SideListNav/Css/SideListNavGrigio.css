@@ -1,0 +1,33 @@
+
+
+
+/*FORMATTAZIONE SPECIFICA PER UN MODELLO di blocchetto elenco GRIGIO (blocchetti neutri)*/
+
+.nav_lat_elenco_grigio{	
+	background-color:#e5e3e3;
+}
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_grigio li.nav_lat_titolo_grigio a{ 
+	background:#cccccc url(../Images/nav_lat_titolo_grigio.jpg) no-repeat;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #989797;
+	color:#333333;/*da cambiare a seconda della sezione*/
+
+}
+
+.nav_lat_elenco_grigio a:link{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	color: #464545;/*da cambiare a seconda della sezione*/
+}
+
+
+.nav_lat_elenco_grigio a:visited{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #464545;/*da cambiare a seconda della sezione     CAMBIATOOOOOO*/
+}
+
+.nav_lat_elenco_grigio a:hover{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	background-color: #cfcccc;/*da cambiare a seconda della sezione*/
+}

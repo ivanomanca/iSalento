@@ -1,0 +1,8 @@
+
+/*--------------------------------------------------------------*/
+/* CORPO DELL'ARTICOLO   scheda
+/*--------------------------------------------------------------*/
+#contenuto .corpo_articolo h3{
+	border-bottom:1px solid #e67520;/*sottolineatura per ogni titoletto dell'articolo*/
+}
+

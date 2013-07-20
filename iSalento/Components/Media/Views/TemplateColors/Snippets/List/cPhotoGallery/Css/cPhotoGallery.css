@@ -1,0 +1,70 @@
+
+/*------------------------------------------------------------------------------------------------------*/
+/* GALLERIA FOTOGRAFICA 
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/*******************************************************************/
+/* CONTENUTO va a sovrascrivere le regole generali in template.css
+/*******************************************************************/
+#contenuto{
+	border:3px solid #eae8e8;
+	position:relative;
+	top:20px;
+	margin-bottom:100px;/*stranamente devo aggiungere extra margin-bottom conseguenza forse del float*/
+}
+
+/* these are the other three spans contains the images for the corners */
+.tr, .bl, .br {
+  position : absolute;
+  width : 27px;
+  height : 27px;  /* corners images are 27x27 */
+  display : block;
+  margin-bottom : -1px;  /* this is for IE */
+}
+
+/* change position and image: top-right */
+.tr {
+  background : transparent url(../Images/tr.gif) no-repeat;
+  top : -4px;
+  right : -4px;
+}
+
+/* change position and image: bottom-left */
+.bl {
+  background : transparent url(../Images/bl.gif) no-repeat;
+  bottom : -4px;
+  left : -4px;
+}
+
+/* change position and image: bottom-right */
+.br {
+  background : transparent url(../Images/br.gif) no-repeat;
+  right : -4px;
+  bottom : -4px;
+}
+
+
+/*******************************************************************************************/
+/* TITOLO DELLA PAGINA + CONTENUTO "eccezionali!!!" che sovrascrivono il template generale
+/*******************************************************************************************/
+/*con posizione diversa dal titolo standard */
+#contenuto .titolo_photo_gallery h1{
+	position:absolute;
+	top:-20px;
+	left:25px;
+	background-color:#ffffff;
+	padding:0px 3px 0px 3px;
+	white-space:nowrap;/*Gli spazi bianchi sono ridotti a uno e l'andata a capo è disabilitata*/
+}
+
+#contenuto .titolo_photo_gallery{
+	background : transparent url(../Images/tl.gif) no-repeat;
+	position : absolute;
+	top:-4px;
+	left:-4px;
+	width : 27px;
+	height : 27px;  /* corners images are 27x27 */
+	display : block;
+}
+

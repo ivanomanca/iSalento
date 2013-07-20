@@ -1,0 +1,13 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO colore verde
+/*************************************************************/
+
+
+.contenitore_blocchetto .intestazione_blocchetto .verde{
+	background:#bbfbbf url(../Images/top_intestazione_blocchetto_verde.jpg) no-repeat top;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto .verde h2{
+	border-bottom:2px solid #26B32E;
+}
+

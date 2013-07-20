@@ -1,0 +1,57 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO regole generali
+/*************************************************************/
+.contenitore_blocchetto{
+	padding:0 0 30px 15px;
+	height:auto;
+}
+
+.contenitore_blocchetto .corpo_blocchetto{
+	border:1px solid #e2dede;
+	border-bottom:3px solid #e2dede;
+	background-color:#f7f4f4;
+	margin:-15px 0px 0px -15px;	
+	padding:0px 0px 10px 15px;
+	width:509px;
+	overflow:hidden;
+
+}
+
+.contenitore_blocchetto .intestazione_blocchetto{
+	background:#cccccc;
+	margin-left:-15px;
+}
+
+
+.contenitore_blocchetto h2{
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+
+.contenitore_blocchetto .approfondisci{
+	margin-right:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#555555;
+	float:right;
+}
+
+
+/* Togle option
+.contenitore_blocchetto .intestazione_blocchetto span,.contenitore_blocchetto .intestazione_blocchetto #togglelink{
+	color:#555555;
+	font-size:10px;
+}
+*/
+
+/** PATCH!!! NON SOVRASCRIVERE MAI LO STESSO SELETTORE!! **/
+/*
+.contenitore_blocchetto .intestazione_blocchetto{
+	background:#bbfbbf url(../Images/top_intestazione_blocchetto_verde.jpg) no-repeat top;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto h2{
+	border-bottom:2px solid #26B32E;
+}
+*/

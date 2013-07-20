@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------------------------------*/
+/* GALLERIA FOTOGRAFICA 
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/*************************************************************/
+/* NUMERO DI PAGINE (.left + .right)
+/*************************************************************/
+/*contiene il numero di pagine*/
+#contenuto .separatore{
+	background-color:#eae8e8;
+	margin-bottom: 12px;
+	height: 40px;
+	position:relative;
+	top:32px;
+}
+
+#contenuto .separatore a{
+	color:#006699;
+}
+
+/*contiene il secondo separatore contenente il numero di pagine spostato in basso*/
+#contenuto #bottom{
+	position:relative;
+	top:-20px;
+}
+
+	/*mostra il numero di pagine su un tot.*/	
+	#contenuto .separatore .left{
+		float: left;
+		width:200px;
+		padding:0px 0px 0px 25px;
+	}
+	
+	#contenuto .separatore .left h6 {
+		color:#888888;
+		font-size:13px;
+		font-weight:normal;
+		letter-spacing:1px;
+		margin:10px 0px 0px 0px;
+	}
+	
+	/*mostra i numeri delle pagine di cui è composta la galleria*/	
+	#contenuto .separatore .right{
+		color:#888888;
+		font-size:13px;
+		float: right;
+		width:225px;
+		margin:10px 0px 0px 0px;
+		font-weight:normal;
+		letter-spacing:1px;
+		padding:0px 25px 0px 0px;
+	}
+	
+	#contenuto .separatore .right span {
+		font-weight:bold;
+		font-size:15px;
+		color:#006699;
+		text-decoration:underline;
+	}
+	
+	#contenuto .separatore .right .frecce_blu_dx{
+		background: transparent url(../Images/frecce_blu_dx.gif) no-repeat scroll right center;
+		padding-right:25px;
+		margin-left:5px;
+	}
+
+	#contenuto .separatore .right .frecce_blu_sx{
+		background: transparent url(../Images/frecce_blu_sx.gif) no-repeat scroll left center;
+		padding-left:25px;
+		margin-right:5px;
+	}
+
+

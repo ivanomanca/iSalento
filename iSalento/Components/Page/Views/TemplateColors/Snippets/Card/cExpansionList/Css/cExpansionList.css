@@ -1,0 +1,38 @@
+/* CSS modello_lista*/
+
+
+/*--------------------------------------------------------------*/
+/* CORPO DELL'ARTICOLO   
+/*--------------------------------------------------------------*/
+#contenuto .corpo_articolo{
+	/*margin-top:-30px;*/
+	margin-bottom:50px;
+}
+
+/*#contenuto .corpo_articolo p{
+	text-indent:25px; /*rientro della prima riga per ogni paragrafo*
+}*/
+
+
+/*************************************************************/
+/*Regole in caso si vuole aggiungere un titolo o dei links*/
+#contenuto .corpo_articolo h3 a:hover{
+	text-decoration:none;
+}
+
+#contenuto .corpo_articolo a{
+	text-decoration:none;
+}
+
+#contenuto .corpo_articolo a:hover{
+	text-decoration:underline;
+}
+/*************************************************************/
+
+
+/*--------------------------------------------------------------*/
+/* CORPO DELL'ARTICOLO   
+/*--------------------------------------------------------------*/
+#contenuto .corpo_articolo h3{
+	border-bottom:1px solid #26B32E;/*sottolineatura per ogni titoletto dell'articolo*/
+}

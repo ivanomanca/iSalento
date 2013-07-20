@@ -1,0 +1,80 @@
+/***********************************************/
+/* FORMATTAZIONE PAGINA CENTRALE  (bianca)     
+/***********************************************/
+#pagina_centrale {
+	position:absolute;
+	top: 290px;
+	left: 2%;
+	right: 2%;
+	margin:auto;
+	width:900px;
+	background-color: #FFF;
+}
+/**********************************************/
+/* PAGINA CENTRALE SENZA NAVIGAZIONI LATERALI          
+/**********************************************/
+#pagina_centrale_senza_navigazioni {
+	/*margin: 0px 142px 0 142px;*/
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+/*Margine per la navigazione sx*/
+#pagina_centrale .sxNav{
+	margin-left: 167px;
+}
+
+/*Margine per la navigazione dx*/
+#pagina_centrale .dxNav{
+	margin-right: 167px;
+}
+
+/************************************************************/
+/* CONTENUTO
+/* Pannello colonna dei contenuti all'interno della pagina
+/************************************************************/
+#contenuto {
+	background-color: #FFF;
+	margin: 20px;
+	width: auto;
+	height: auto;
+	line-height:18px;
+}
+
+/************************/
+/* Angoli pagina centrale
+/************************/
+/*#tl {
+	position:absolute;
+	top: -1px;
+	left: -1px;
+	height: 6px;
+	width: 6px;
+	background: url(../Images/tl_curve_blu.jpg);
+}
+
+#tr {
+	position:absolute;
+	top: -1px;
+	right: -1px;
+	height: 6px;
+	width: 6px;
+	background: url(../Images/tr_curve_white.gif);
+}*/
+
+
+#contenuto a:visited{ 
+	text-decoration:underline;
+}
+
+#contenuto a:hover{ 
+	text-decoration:underline;
+}
+
+#contenuto h1 a:visited, #contenuto h2 a:visited, #contenuto h3 a:visited,#contenuto h4 a:visited  { 
+	text-decoration: none;
+}
+
+#contenuto h1 a:hover, #contenuto h2 a:hover, #contenuto h3 a:hover,#contenuto h4 a:hover { 
+	text-decoration: underline;
+}

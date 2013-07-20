@@ -1,0 +1,186 @@
+
+/**
+ * SubNav
+ */
+ 
+/* Behaviour for SubNav 'link over' or 'current' */
+#point li li a:hover, #point li li.current {
+	background: none;
+}
+
+/*Grassetto per nome link SUBTAB current, grassetto per ogni sub link current*/
+#point li.current li.current a {
+	font-weight:bold;
+}
+
+/*sub link font normale se non current*/
+#point li.current li a {
+/*Qui si possono specificare regole diverse come ad esempio 
+caricare un'immagine anzichè formattare un testo..*/
+font-weight:normal;
+}
+
+/*SOTTOBARRA*/
+/*SUBS: linea delle sotto tabs*/
+#point ul {
+	/*background-position:center bottom;*/
+	border-style:solid;
+	border-width:0px;
+	display: none; /*sub menù nascosto*/
+	height:20px;
+	margin:6pt;
+	padding:0pt;
+	position:absolute;
+	top:46px; /*46 px dall'alto*/
+	width: auto;
+	z-index:400;
+}
+
+
+/*subTABS, elementi della sotto barra*/
+#point ul li {
+	border:medium none;
+	height:9px;
+	margin:0pt;
+	padding:6px 0pt;
+}
+
+/*Links dei subtabs*/
+#point ul a {
+	/*background-color: transparent;
+border-color:-moz-use-text-color #FFFFFF -moz-use-text-color -moz-use-text-color;
+border-width:medium 1px medium medium;*/
+	color:#000000;
+	letter-spacing: inherit;
+	margin:-4px 0px;
+	padding:2px 7px;
+	text-align:left;
+	white-space:nowrap;/*FORSE INUTILE - non mantiene gli spazi bianchi presenti nel codice e dovrebbe apparire tutto su una riga*/
+	width:auto;
+}
+
+/*COMPORTAMENTI GENERALI : over e current*/
+/*-----SUBS-----*/
+/*Links dei subs over = sottolineati*/
+#point li ul a:hover {
+	font-weight:bold;
+}
+
+/*subs quando la corrispondente sopraTAB è over*/
+#point li.over ul {
+	display:block;
+	z-index:2;/*li mette sotto le tabs (che sono z=3) per far avvenire la continuità del colore tra barra TAB e barra SUBS*/
+}
+
+/*subs quando la corrispondente sopraTAB è current*/
+#point li.current ul {
+	display:block;
+	font-weight:bold;
+	z-index:1;
+	
+	overflow:hidden;/*regola aggiunta*/
+}
+
+/** COLORI **/
+
+/*Blu*/
+#point li#blu ul a {
+	color: #ffffff;/*da cambiare a seconda sella sezione*/
+	padding:2px 7px; /*patch per sovrascrivere le regole del TAB*/
+}
+
+#point ul.sub_blu{
+	background: url(../Images/sub_blu_02.gif) repeat-x;
+}
+
+#point ul.sub_blu li#sub_blu_first {
+	background: url(../Images/sub_blu_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_blu li#sub_blu_last {
+	background: url(../Images/sub_blu_03.gif) no-repeat right;
+	z-index:600;
+}
+
+/*Verde*/
+#point li#verde ul a {
+	color: #ffffff;/*da cambiare a seconda sella sezione*/
+	padding:2px 7px; /*patch per sovrascrivere le regole del TAB*/
+}
+
+#point ul.sub_verde{
+	background: url(../Images/sub_verde_02.gif) repeat-x;
+}
+
+#point ul.sub_verde li#sub_verde_first {
+	background: url(../Images/sub_verde_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_verde li#sub_verde_last {
+	background: url(../Images/sub_verde_03.gif) no-repeat right;
+	z-index:600;
+}
+
+/*Arancione*/
+#point li#arancione ul a {
+	color: #ffffff;/*da cambiare a seconda sella sezione*/
+	padding:2px 7px; /*patch per sovrascrivere le regole del TAB*/
+}
+
+#point ul.sub_arancione{
+	background: url(../Images/sub_arancione_02.gif) repeat-x;
+}
+
+#point ul.sub_arancione li#sub_arancione_first {
+	background: url(../Images/sub_arancione_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_arancione li#sub_arancione_last {
+	background: url(../Images/sub_arancione_03.gif) no-repeat right;
+	z-index:600;
+}
+
+/*Giallo*/
+#point li#giallo ul a {
+	color: #6b5601;/*da cambiare a seconda sella sezione*/
+	padding:2px 7px; /*patch per sovrascrivere le regole del TAB*/
+}
+
+#point ul.sub_giallo{
+	background: url(../Images/sub_giallo_02.gif) repeat-x;
+}
+
+#point ul.sub_giallo li#sub_giallo_first {
+	background: url(../Images/sub_giallo_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_giallo li#sub_giallo_last {
+	background: url(../Images/sub_giallo_03.gif) no-repeat right;
+	z-index:600;
+}
+
+
+/*!! Da fare - Grigio*/
+#point li#grigio ul a {
+	color: #6b5601;/*da cambiare a seconda sella sezione*/
+	padding:2px 7px; /*patch per sovrascrivere le regole del TAB*/
+}
+
+#point ul.sub_grigio{
+	background: url(../Images/sub_grigio_02.gif) repeat-x;
+}
+
+#point ul.sub_grigio li#sub_giallo_first {
+	background: url(../Images/sub_grigio_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_grigio li#sub_grigio_last {
+	background: url(../Images/sub_grigio_03.gif) no-repeat right;
+	z-index:600;
+}
+

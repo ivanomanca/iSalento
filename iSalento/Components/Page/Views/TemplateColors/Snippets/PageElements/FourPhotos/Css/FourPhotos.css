@@ -1,0 +1,12 @@
+/*************************************************************/
+/* BLOCCHETTO 4 FOTO 
+/*************************************************************/
+.contenitore_blocchetto .blocchetto_4_foto p{
+	margin-right:15px;/*solo per il blocchetto delle foto altrimenti va messo nel suo contenitore*/
+}
+
+.contenitore_blocchetto .blocchetto_4_foto img{
+	padding:4px;
+	border:1px solid #999999;
+	margin-right:16px;/*solo per il blocchetto delle foto altrimenti va messo nel suo contenitore*/
+}

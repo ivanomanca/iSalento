@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per il blocchetto di NAV_LAT GENERICA arancione
+/*----------------------------------------------------------------------------------------------------------*/
+/*TITOLO arancione nel blocchetto generico di navigazione laterale*/
+.nav_lat_titolo_arancione{
+	background: url(../Images/nav_lat_titolo_arancione.jpg) no-repeat #ff6633;  
+	border-bottom:2px solid #ff6633;
+}
+
+.nav_lat_titolo_arancione h4 a{
+	color:#ffffff;
+}
+
+/*CORPO arancione nel blocchetto generico di navigazione laterale*/
+.nav_lat_corpo_arancione{
+	background-color:#ffcc99;
+}

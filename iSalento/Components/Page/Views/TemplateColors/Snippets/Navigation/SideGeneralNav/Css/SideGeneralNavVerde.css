@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per il blocchetto di NAV_LAT GENERICA verde
+/*-----------------------------------------------------------------------------------------------------*/
+/*TITOLO verde nel blocchetto generico di navigazione laterale*/
+.nav_lat_titolo_verde{
+	background:#26b32e url(../Images/nav_lat_titolo_verde.jpg) no-repeat;  
+	border-bottom:2px solid #26b32e;
+}
+
+.nav_lat_titolo_verde h4 a{
+	color:#ffffff;
+}
+
+/*CORPO grigio nel blocchetto generico di navigazione laterale*/
+.nav_lat_corpo_verde{
+	background-color:#bbfbbf;
+}

@@ -1,0 +1,54 @@
+
+/* MODELLO ELENCO di navigazione laterale ed extra con regole di formattazione generali e specifiche separate */
+
+
+/*--------------------------------------------------------------*/
+/* ELEMENTI INTERNI: NAVIGAZIONE_LATERALE ed EXTRA
+/*--------------------------------------------------------------*/
+
+
+/******************************************************/
+/* LINKS NAVIGAZIONE LATERALE ed EXTRA
+/******************************************************/
+
+/*****************FORMATTAZIONE BASE PER UN MODELLO di blocchetto elenco**********/
+.nav_lat_elenco{
+	font-size: 10pt;
+	list-style:none; /* elimino i punti elenco */
+	margin:0px 0px 20px 0px;
+	padding:0; /* elimino i rientri delle liste */
+}
+
+.nav_lat_elenco a:link{
+	display: block;
+	border-top: 1px solid #fff;
+	padding: 3px 0px 3px 10px;
+	text-decoration: none;/*toglie le sottolineature ai links, già presente nelle regole generali di a */
+}
+
+
+/*FORMATTAZIONE GENERALE PER IL TITOLO*/ 
+.nav_lat_elenco li:first-child {
+	font-weight: bold;
+	font-size:12px;
+	height:24px;
+	text-decoration: none;/*toglie le sottolineature ai links, già presente nelle regole generali di a */
+}
+
+
+.nav_lat_elenco a:visited{
+	border-top: 1px solid #fff;
+	display: block;
+	padding: 3px 0px 3px 10px;
+}
+
+.nav_lat_elenco a:hover{
+	display: block;
+	border-top: 1px solid #fff;
+	background-image: none;
+	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+

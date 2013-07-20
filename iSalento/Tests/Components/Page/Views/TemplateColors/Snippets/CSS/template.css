@@ -1,0 +1,594 @@
+/*************************************************************/
+/* template.css                           
+/* Usato come template per il file template.htm        
+/*************************************************************/
+
+/* 
+	TAG USATI PER LA FORMATTAZIONE DEI CSS									
+	DIV: 	nuova linea (periodo)
+	SPAN:	blocco all'interno della stessa linea (CSS)
+	P:		lascia una riga prima e dopo (paragrafo)
+*/
+
+
+/*
+	MENU DEI COLORI
+	NERO:#000
+	GIALLO:#fc0
+	VERDE:#26b32e
+	BLU:#0193de
+	ARANCIONE:#e67520
+	CELESTE:#66cccc
+	ROSA:#df4bab
+	GRIGIO:#333
+*/
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* REGOLE GENERALI 
+/* Regole generali applicate finchè nn si hanno regole specifiche               
+/*------------------------------------------------------------------------------------------------------*/
+
+
+@import url(nav_lat_blocchetti.css);/*BARRE DI NAVIGAZIONE LATERALE sx e dx - BLOCCHETTI*/
+@import url(blocchetti.css);/*BLOCCHETTI interni al contenuto*/
+
+
+
+/*************************************************************/
+/* HTML
+/*************************************************************/
+html {
+	width:100%;
+}
+/*************************************************************/
+/* SELETTORE UNIVERSALE
+/*************************************************************/
+* {
+	padding: 0px;
+}
+/*************************************************************/
+/* BODY
+/*************************************************************/
+body {
+	font-family: Helvetica,Verdana,Arial,sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color:#333333;
+	z-index:50;
+	background-attachment: fixed;
+	background: url(../IMMAGINI/linea_grafica_base.jpg) repeat-x #fff;
+}
+
+/*******************************************************/
+/* CONTAINER: contenitore di tutta la pagina
+/*******************************************************/ 
+#container {
+	width: 850px;
+}
+
+/*************************************************************/
+/* FORMATTAZIONE PER I LINKS  
+/*************************************************************/
+
+/* REGOLE PER TUTTI I LINK IN GENERALE (esterni ed interni) */
+a{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* LINK ESTERNI */
+a:link{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* STILE PER LINK VISITATO */
+a:visited{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* STILE PER MOUSE SOPRA AL LINK */
+a:hover{
+		color: #005FA9;
+		text-decoration: underline;
+}
+
+/*bordo dell'immagine*/
+a img{
+	border: none;
+}
+
+/************************************/
+/* FORMATTAZIONE PER I TITOLI       
+/************************************/
+h1 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	color: #334d55;
+	font-size: 140%;
+}
+
+h2 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	color: #334d55;
+	font-size: 120%;
+}
+
+h3 {
+	font-family: Helvetica,Verdana, Arial,sans-serif;
+	color: #334d55;
+	font-size: 110%;
+}
+
+h4 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #334d55;
+}
+
+h5 {
+	font-family: Helvetica,Verdana,Arial,sans-serif;
+	font-size: 90%;
+	color: #334d55;
+}
+
+/*************************************************************/
+/* FORMATTAZIONE PER I PARAGRAFI  
+/*************************************************************/
+p{
+	text-align:justify;
+}
+
+/*******************************************************/
+/* ELENCHI PUNTATI (es: barre di navigazione laterali)    
+/*******************************************************
+ul{
+	list-style-type: square;
+}
+
+ul ul{
+	list-style-type: disc;
+}
+
+ul ul ul{
+ 	list-style-type: none;
+}
+
+
+/*******************************************************/
+/* FORMATTAZIONE PER I FORM (inserimento dati utente)  
+/*******************************************************  
+label {
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: #334d55;
+}
+input {
+	font-family: Arial, sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE: LAYOUT BOX DI IMPAGINAZIONE
+/* Regole specifiche definite dall'utente che prevalgono sulle regole generali (a cascata)               
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/***********************************************************************************************************/
+/* HEADER (navigazione + logo)                                  
+/* parte superiore della pagina composta da 3 blocchi: nome sito + utility; barra di navigazione; sublinks
+/**********************************************************************************************************/
+#header {
+	position:absolute;
+	top: 0px;
+	left: 2%;
+	right:2%;
+	width:850px;
+	height:355px;
+	margin:auto;/*background: url(header.jpg) repeat-x #F6F4E4;*/
+	
+}
+/***********************************************/
+/* FORMATTAZIONE PAGINA CENTRALE  (bianca)     
+/***********************************************/
+#pagina_centrale {
+	position:absolute;
+	top: 290px;
+	left: 2%;
+	right: 2%;
+	margin:auto;
+	width:850px;
+	background-color: #FFF;
+}
+
+#tl {
+	position:absolute;
+	top: -1px;
+	left: -1px;
+	height: 6px;
+	width: 6px;
+/*	background: url(../immagini/tl_curve_blu.jpg);*/
+}
+
+#tr {
+	position:absolute;
+	top: -1px;
+	right: -1px;
+	height: 6px;
+	width: 6px;
+/*	background: url(../immagini/tr_curve_white.gif);*/
+}
+/*------------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE: COMPONENTI PER OGNI BOX (div) DI IMPAGINAZIONE
+/* Regole specifiche definite dall'utente che prevalgono sulle regole generali (a cascata)               
+/*------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
+/* ELEMENTI INTERNI: NAVIGAZIONE TOP
+/*--------------------------------------------------------------*/
+
+/*******************************************************/
+/* LOGO: sitename + image
+/*******************************************************/
+#testata{
+	height:254px;
+	position:absolute;
+	top:30px;
+	width:100px;
+}
+
+ #logo{
+ 	background: url(../IMMAGINI/marchio_180_92.gif) no-repeat;
+	z-index:200;
+	height:120px;
+	position:absolute;
+	top:-13px;
+	width:190px;
+ }
+ 
+/*******************************************************/
+/* NOME DEL SITO ALL'INTERNO DELLA NAVIGAZIONE TOP
+/*******************************************************/
+
+#logo h1 {
+	color:#000;
+	font-weight: normal;
+	text-indent:-9999px;
+	width:190px;
+}
+
+
+/*******************************************************/
+/* IMMAGINE DI PRESENTAZIONE DEL SITO NELL'HEADER
+/*******************************************************/
+#testata #image {
+	background: url(../IMMAGINI/lidopizzo_850_136.jpg) no-repeat;
+	height:136px;
+	width:850px;
+	position: absolute;
+	top:71px;
+}
+
+/*****************************************************************/
+/* BARRA DI NAVIGAZIONE IN ALTO
+/****************************************************************/
+
+/*CONTENITORE_SCATOLA CHE RACCHIUDE LA NAVIGAZIONE IN ALTO*/ 
+#navigazione {
+ border-top:11px solid #000;
+ margin-bottom:41px;
+ padding:1px 0px 0px 188px;
+ z-index:300; 
+}
+
+/*NAVIGAZIONE IN ALTO*/
+#point {
+	display:table;
+	padding:0;
+	margin:0 auto;
+	list-style:none;
+	/*background:#CCCCCC url(../immagini/right2.gif) no-repeat right bottom;*/
+	background:#999 url(../IMMAGINI/ombra_navigazione1.jpg) repeat-x top;
+	white-space:nowrap;
+}
+
+#point li {
+	display:table-cell;
+	margin:0;
+	padding:0;
+}
+
+#point li#nero {
+	background:  url(../IMMAGINI/angolo_sx.jpg) no-repeat left bottom;
+	border-top:5px solid #000;
+}
+
+#point li#giallo {
+	border-top:5px solid #FC0;
+}
+
+#point li#verde {
+	border-top:5px solid #26b32e;
+}
+
+#point li#blu {
+	border-top:5px solid #0193de;
+}
+
+#point li#arancione {
+	border-top:5px solid #e67520;
+}
+
+#point li#celeste {
+	border-top:5px solid #66cccc;
+}
+
+#point li#rosa {
+	border-top:5px solid #df4bab;
+}
+
+#point li#grigio {
+	border-top:5px solid #333;
+	background: url(../IMMAGINI/angolo_dx.jpg) no-repeat right bottom;
+}
+
+
+#point li a {
+	float:left;
+	font-family:arial;
+	font-size:11px;
+	letter-spacing:1px;
+	padding:10px 13px;
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+#point li a:hover, #point li.current {
+	background:  url(../IMMAGINI/down_arrow_nero.png) no-repeat center top; /*puntatore*/
+}
+
+#point li li a:hover, #point li li.current {
+	background: none;
+}
+
+/*Grassetto per nome link SUBTAB current, grassetto per ogni sub link current*/
+#point li.current li.current a {
+	font-weight:bold;
+}
+
+/*sub link font normale se non current*/
+#point li.current li a {
+	/*Qui si possono specificare regole diverse come ad esempio caricare un'immagine anzichè formattare un testo..*/
+font-weight:normal;
+}
+
+/*SOTTOBARRA*/
+/*SUBS: linea delle sotto tabs*/
+#point ul {
+	/*background-position:center bottom;*/
+	border-style:solid;
+	border-width:0px;
+	display: none; /*sub menù nascosto*/
+	height:20px;
+	margin:6pt;
+	padding:0pt;
+	position:absolute;
+	top:46px; /*46 px dall'alto*/
+	width: auto;
+	background: url(../IMMAGINI/sub_verde_02.gif) repeat-x;
+	z-index:400;
+}
+
+#point ul.sub_verde li#sub_verde_first {
+	background: url(../IMMAGINI/sub_verde_01.gif) no-repeat left;
+	z-index:500;
+}
+
+#point ul.sub_verde li#sub_verde_last {
+	background: url(../IMMAGINI/sub_verde_03.gif) no-repeat right;
+	z-index:600;
+}
+
+
+/*subTABS, elementi della sotto barra*/
+#point ul li {
+	border:medium none;
+	height:9px;
+	margin:0pt;
+	padding:6px 0pt;
+}
+
+/*Links dei subtabs*/
+#point ul a {
+	/*background-color: transparent;
+border-color:-moz-use-text-color #FFFFFF -moz-use-text-color -moz-use-text-color;
+border-width:medium 1px medium medium;*/
+	color:#000000;
+	letter-spacing: inherit;
+	margin:-4px 0px;
+	padding:2px 7px;
+	text-align:left;
+	white-space:nowrap;/*FORSE INUTILE - non mantiene gli spazi bianchi presenti nel codice e dovrebbe apparire tutto su una riga*/
+	width:auto;
+}
+
+#point li#giallo ul a {
+	color: #6b5601;/*da cambiare a seconda sella sezione*/
+}
+
+#point li#verde ul a {
+	color: #ffffff;/*da cambiare a seconda sella sezione*/
+}
+
+/*COMPORTAMENTI GENERALI : over e current*/
+/*-----SUBS-----*/
+/*Links dei subs over = sottolineati*/
+#point li ul a:hover {
+	font-weight:bold;
+}
+
+/*subs quando la corrispondente sopraTAB è over*/
+#point li.over ul {
+	display:block;
+	z-index:2;/*li mette sotto le tabs (che sono z=3) per far avvenire la continuità del colore tra barra TAB e barra SUBS*/
+}
+
+/*subs quando la corrispondente sopraTAB è current*/
+#point li.current ul {
+	display:block;
+	font-weight:bold;
+	z-index:1;
+}
+
+/*-----TABS-----*/
+/*LINKS TAB over*/
+#point li a.over {
+	/*border-bottom:medium none;*/
+padding-bottom:7px;
+	position:relative;
+	z-index:3;
+}
+
+/*barra subs e link dei TABs over= ripeti l'immagine background*/
+#point ul, li.over a {
+	background-repeat:repeat-x;
+}
+
+/*i links nei list items (li) in generale 
+li.over a {
+background-position:center top;
+}*/
+
+
+
+/*--------------------------------------------------------------*/
+/* ELEMENTI INTERNI: PAGINA CENTRALE
+/*--------------------------------------------------------------*/
+
+/*********************************************/
+/* NAVIGAZIONE LATERALE 
+/* Pannello colonna navigazione laterale dx
+/*********************************************/
+#navigazione_laterale {
+	float: left;
+	width:142px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #ccc;  DOPPIO BORDO INFERIORE*/
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}
+
+/**********************************************/
+/* PAGINA CENTRALE SENZA NAVIGAZIONI LATERALI          
+/**********************************************/
+#pagina_centrale_senza_navigazioni {
+	margin: 0px 142px 0 142px;
+	margin-bottom: 20px;
+}
+/************************************************************/
+/* CONTENUTO
+/* Pannello colonna dei contenuti all'interno della pagina
+/************************************************************/
+#contenuto {
+	background-color: #FFF;
+	margin: 20px;
+	width: auto;
+	height: auto;
+	line-height:18px;
+}
+/*********************************************/
+/* NAVIGAZIONE EXTRA 
+/* Pannello colonna navigazione laterale sx 
+/*********************************************/
+#extra {
+	float: right;
+	width:142px;
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #ccc;  DOPPIO BORDO INFERIORE*/
+	border-right: #ECF2F2;
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}
+/************************************/
+/* FOOTER
+/************************************/
+#footer {
+	clear: both;
+	border-top: 1px solid #ccc;
+	font-size: 90%;
+	color: #ccc;
+	padding: 10px;
+	margin-top:60px;
+}
+
+#footer a{
+	color: #666666;
+}
+
+#footer a:hover{
+	color: #005FA9;
+}
+
+
+#footer img {
+	padding: 4px 4px 4px 0px;
+	vertical-align: middle;
+}
+/*--------------------------------------------------------------*/
+/* ELEMENTI INTERNI: PAGINA CENTRALE SENZA NAVIGAZIONI
+/*--------------------------------------------------------------*/
+
+/************************************/
+/* PERCORSO PAGINA CORRENTE          
+/************************************/
+#percorso_pagina_corrente {
+	padding: 5px 0px 5px 0px;
+	margin: 0px 20px 20px;
+	border-bottom: 1px solid #999;
+	border-bottom-style: dashed;
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	color: #AAA;
+}
+
+#percorso_pagina_corrente a {
+	color: #AAA;
+}
+
+#percorso_pagina_corrente a:hover {
+	color:#005FA9;
+	text-decoration: underline;
+}
+
+
+/*****************************************************************/
+/* ANNUNCIO PUBBLICITARIO ALL'INTERNO DELLA NAVIGAZIONE LATERALE
+/****************************************************************
+#advert {
+	padding: 10px;
+}
+#advert img {
+	display: block;
+}
+/*****************************************************************/
+/* ANNUNCIO PUBBLICITARIO ALL'INTERNO DELLA NAVIGAZIONE LATERALE
+/****************************************************************
+#advert {
+	padding: 10px;
+}
+#advert img {
+ display: block 
+
+
+
+
+
+
+
+
+
+

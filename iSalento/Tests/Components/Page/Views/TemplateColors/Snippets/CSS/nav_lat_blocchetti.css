@@ -1,0 +1,162 @@
+
+/* MODELLO ELENCO di navigazione laterale ed extra con regole di formattazione generali e specifiche separate */
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/* ELEMENTI INTERNI: NAVIGAZIONE_LATERALE ed EXTRA
+/*--------------------------------------------------------------*/
+
+
+/******************************************************/
+/* LINKS NAVIGAZIONE LATERALE ed EXTRA
+/******************************************************/
+
+/*****************FORMATTAZIONE BASE PER UN MODELLO di blocchetto elenco**********/
+.nav_lat_elenco{
+	font-size: 10pt;
+	list-style:none; /* elimino i punti elenco */
+	margin:0px 0px 20px 0px;
+	padding:0; /* elimino i rientri delle liste */
+}
+
+.nav_lat_elenco a:link{
+	display: block;
+	border-top: 1px solid #fff;
+	padding: 3px 0px 3px 10px;
+	text-decoration: none;/*toglie le sottolineature ai links, già presente nelle regole generali di a */
+}
+
+
+/*FORMATTAZIONE GENERALE PER IL TITOLO*/ 
+.nav_lat_elenco li:first-child {
+	font-weight: bold;
+	font-size:12px;
+	height:24px;
+	text-decoration: none;/*toglie le sottolineature ai links, già presente nelle regole generali di a */
+}
+
+
+.nav_lat_elenco a:visited{
+	border-top: 1px solid #fff;
+	display: block;
+	padding: 3px 0px 3px 10px;
+}
+
+.nav_lat_elenco a:hover{
+	display: block;
+	border-top: 1px solid #fff;
+	background-image: none;
+	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+/*****************FORMATTAZIONE SPECIFICA per la sezione GIALLA (attrazioni) **********/
+
+
+.nav_lat_elenco_giallo{	
+	background-color:#fcf2cb;
+}
+
+/*.nav_lat_elenco_giallo,.nav_lat_elenco_verde{
+	margin-bottom:20px;
+}*/
+
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_giallo li.nav_lat_titolo_giallo a{ 
+	background: url(../IMMAGINI/nav_lat_titolo_giallo.jpg) no-repeat #ffcc00 ;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #daaf03;
+	color:#6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:link{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	color: #6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:visited{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #6b5601;/*da cambiare a seconda della sezione*/
+}
+
+.nav_lat_elenco_giallo a:hover{
+	border-bottom: 1px solid #fc0;/*da cambiare a seconda della sezione*/
+	background-color: #fce68e;/*da cambiare a seconda della sezione*/
+}
+
+
+/*****************FORMATTAZIONE SPECIFICA PER UN MODELLO di blocchetto elenco VERDE (eventi)**********/
+
+.nav_lat_elenco_verde{	
+	background-color:#bbfbbf;
+}
+
+/*.nav_lat_elenco_giallo,.nav_lat_elenco_verde{
+	margin-bottom:20px;
+}*/
+
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_verde li.nav_lat_titolo_verde a{ 
+	background: url(../IMMAGINI/nav_lat_titolo_verde.jpg) no-repeat #26b32e ;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #26b32e;
+	color:#ffffff;/*da cambiare a seconda della sezione*/
+
+}
+
+.nav_lat_elenco_verde a:link{
+	border-bottom: 1px solid #26b32e;/*da cambiare a seconda della sezione*/
+	color: #196c1d;/*da cambiare a seconda della sezione*/
+}
+
+
+.nav_lat_elenco_verde a:visited{
+	border-bottom: 1px solid #26b32e;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #196C1D;/*da cambiare a seconda della sezione     CAMBIATOOOOOO*/
+}
+
+.nav_lat_elenco_verde a:hover{
+	border-bottom: 1px solid #26b32e;/*da cambiare a seconda della sezione*/
+	background-color: #96f89c;/*da cambiare a seconda della sezione*/
+}
+
+
+/*****************FORMATTAZIONE SPECIFICA PER UN MODELLO di blocchetto elenco GRIGIO (blocchetti neutri)**********/
+
+.nav_lat_elenco_grigio_chiaro{	
+	background-color:#e5e3e3;
+}
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_grigio_chiaro li.nav_lat_titolo_grigio_chiaro a{ 
+	background: url(../IMMAGINI/nav_lat_titolo_grigio_chiaro.jpg) no-repeat #333333;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #989797;
+	color:#333333;/*da cambiare a seconda della sezione*/
+
+}
+
+.nav_lat_elenco_grigio_chiaro a:link{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	color: #464545;/*da cambiare a seconda della sezione*/
+}
+
+
+.nav_lat_elenco_grigio_chiaro a:visited{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #464545;/*da cambiare a seconda della sezione     CAMBIATOOOOOO*/
+}
+
+.nav_lat_elenco_grigio_chiaro a:hover{
+	border-bottom: 1px solid #989797;/*da cambiare a seconda della sezione*/
+	background-color: #cfcccc;/*da cambiare a seconda della sezione*/
+}

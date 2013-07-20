@@ -1,0 +1,50 @@
+/*************************************************************/
+/* GALLERIA FOTOGRAFICA
+/*************************************************************/
+ul.galleria {
+	list-style-type:none;
+	margin:30px 15px 50px 18px;
+	padding:0px 0px 0px 5px;
+	position:relative;
+	top:30px;
+	overflow: hidden;/*with overflow and widht I can clear float without structural markup !!!!! */
+	width:100%;
+}
+
+/*ombra diagonale delle foto*/
+ul.galleria .ombra_diagonale{
+	background: url(../Images/ombra_diagonale.jpg) no-repeat scroll center bottom;
+	width:140px;
+	height:11px;
+	display:block;
+}
+
+ul.galleria li {
+	float:left;
+	margin:0px 13px 20px 0px;
+	padding:0px 0px 0px 0px;
+	height:150px;
+	width:140px;
+	overflow:hidden;/*nasconde il testo che va fuori dalle dimensioni impostate*/
+}
+
+ul.galleria li img {
+	display:block;
+	border:1px solid;
+    border-color: #CCC #CCC #AAA #CCC;
+	background: #f6f6f6;
+	padding:5px 5px 5px 5px;
+	height:97px;
+	width:128px;
+}
+
+/*TITOLO DELL'IMMAGINE******************/
+.title_img{
+	margin-top:0px;
+	text-align:center;
+	line-height:16px;
+}
+
+#contenuto h5 a{
+	color:#006699;
+}

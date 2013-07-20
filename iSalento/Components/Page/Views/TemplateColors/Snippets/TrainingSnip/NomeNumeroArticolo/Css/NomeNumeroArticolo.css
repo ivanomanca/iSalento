@@ -1,0 +1,25 @@
+.articolo {
+float:left;
+height:240px;
+margin:0 19px 15px 0;
+overflow:hidden;
+text-align:center;
+width:150px;
+border:1px solid red;
+}
+
+
+.n_articolo a {
+color:#333333;
+}
+
+.nome_articolo {
+max-height:31px;
+overflow:hidden;
+}
+
+.nome_articolo a {
+color:#333333;
+font-weight:bold;
+line-height:15px;
+}

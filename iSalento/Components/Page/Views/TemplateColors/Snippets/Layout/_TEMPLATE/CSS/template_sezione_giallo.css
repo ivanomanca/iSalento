@@ -1,0 +1,59 @@
+/* CSS template_sezione_giallo - sezione attrazioni */
+
+body {
+	background: url(../images/linea_grafica_gialla.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #fdceca;
+	border-right:2px solid #fdceca;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#ffcc00;
+}
+
+#contenuto h1,#contenuto h1 a{
+	color:#daaf03;
+}
+
+#contenuto a:visited{ 
+	text-decoration:underline;
+}
+
+#contenuto a:hover{ 
+	text-decoration:underline;
+}
+
+#contenuto h1 a:visited, #contenuto h2 a:visited, #contenuto h3 a:visited, #contenuto h4 a:visited { 
+	text-decoration: none;
+}
+
+#contenuto h1 a:hover, #contenuto h2 a:hover, #contenuto h3 a:hover, #contenuto h4 a:hover{ 
+	text-decoration: underline;
+}
+
+#contenuto a:hover img{
+	border:1px solid #ffcc00;
+}
+
+
+
+/*************************************************************/
+/* formattazione per il MODELLO LISTE                          
+/*************************************************************/
+
+/*************************************************************/
+/* Contenitore dell'articolo SPECIALE    
+/*************************************************************/
+#contenuto #speciale{ 
+	border-bottom:2px solid #fcf2cb;
+	border-left:1px solid #fcf2cb;
+	border-right:1px solid #fcf2cb;	
+}
+
+
+#contenuto #speciale #titolo_speciale h2{
+	color:#6B5601;
+	/*background:url(../images/titolo_speciale_verde.jpg) no-repeat;*/
+	background-color:#ffcc00;

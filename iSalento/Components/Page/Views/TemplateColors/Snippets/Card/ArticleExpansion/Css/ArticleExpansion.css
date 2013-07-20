@@ -1,0 +1,13 @@
+/*************************************************************/
+/* Prima lettera dell'articolo
+/*************************************************************/
+#contenuto .corpo_articolo #cap{
+	color:#333333;
+	float:left;
+	font-size:50px;
+	font-weight:bold;
+	height:34px;
+	line-height:34px;
+	margin-right:1px;
+	margin-top:2px;
+}

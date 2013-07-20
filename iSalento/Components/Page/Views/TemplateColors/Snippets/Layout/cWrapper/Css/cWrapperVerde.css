@@ -1,0 +1,26 @@
+/* CSS template_sezione_verde  */
+
+
+/*************************************************************/
+/* REGOLE GENERALI di TEMPLATE verde                       
+/*************************************************************/
+.immagine_body_verde{
+	background: url(../Images/linea_grafica_verde.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #88fc8f;
+	border-right:2px solid #88fc8f;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#26b32e;
+}
+
+#contenuto h1,#contenuto h1 a{ /*TITOLO DELLA PAGINA*/
+	color:#238a1d;
+}
+
+#contenuto a:hover img{
+	border:1px solid #26b32e;
+}

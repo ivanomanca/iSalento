@@ -1,0 +1,144 @@
+/*************************************************************/
+/* PAGINA CENTRALE 
+/*************************************************************/
+#pagina_centrale_home{
+	width:900px;
+	height:auto;
+	position:absolute;
+	top:130px;
+	background-color:#FFFFFF; /* Regole vecchie */
+	left:2%;
+	margin:auto;
+	right:2%;
+}
+
+/*************************************************************/
+/* CONTENUTO
+/*************************************************************/
+#contenuto_home{
+	height: auto;
+	margin:0px;
+	background-color:#FFFFFF;
+	line-height:18px;
+	width:auto;
+}
+
+/*************************************************************/
+/* contenuto_top (contenuto_top_left + contenuto_top_right)
+/*************************************************************/
+#contenuto_top{
+	width:900px;
+	height:200px;
+}
+
+/********************************************************************/
+/* contenuto_middle (contenuto_middle_left + contenuto_middle_right)
+/********************************************************************/
+#contenuto_middle{
+	height:400px;
+	margin-top:18px;
+	padding:15px 0px;
+	border-top:3px solid #E2DEDE;
+	border-bottom:3px solid #E2DEDE;
+	border-left:1px solid #E2DEDE;
+	border-right:1px solid #E2DEDE;
+}
+
+/**********************************************************************************************/
+/* contenuto_bottom (contenuto_bottom_left + contenuto_bottom_middle + contenuto_bottom_right)
+/**********************************************************************************************/
+#contenuto_bottom{
+	height: auto;
+	width:900px;
+	margin-top:18px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per l'homepage
+/* Regole specifiche per i box principali dell'homepage               
+/*------------------------------------------------------------------------------------------------------*/
+
+/*************************************************************/
+/* contenuto_top (contenuto_top_left + contenuto_top_right)
+/*************************************************************/
+
+/*************************************************************/
+/* contenuto_top_left
+/*************************************************************/
+#contenuto_top_left{
+	float:left;
+	width:592px;
+	height:200px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/* CONTENUTO TOP RIGHT
+/*---------------------------------------------------------------------------------*/
+#contenuto_top_right{
+	float:right;
+	width:296px;
+	height:200px;
+}
+
+/*************************************************************/
+/* contenuto_middle_left
+/*************************************************************/
+#contenuto_middle_left{
+	float:left;
+	width:604px;
+	height:400px;
+	background: url(../Images/ribbon1.png) no-repeat top left;
+	position:relative;
+	top:-22px;
+	left:-6px;
+}
+
+
+/*************************************************************/
+/* contenuto_middle_right
+/*************************************************************/
+#contenuto_middle_right{
+	float:right;
+	width:275px;
+	height:369px;
+	margin:-15px -40px 0px 0px;
+	padding:60px 0px 0px 20px;
+	position:absolute;
+	right:40px;
+	background-color:#F7F4F4;
+	border:1px solid #e2dede;
+}
+
+
+/*************************************************************/
+/* CONTENUTO BOTTOM
+/*************************************************************/
+
+/*************************************************************/
+/* contenuto_bottom_left
+/*************************************************************/
+#contenuto_bottom_left{
+	width:292px;
+	float:left;
+	height:400px;
+}
+
+/*************************************************************/
+/* contenuto_bottom_right
+/*************************************************************/
+#contenuto_bottom_right{
+	width:292px;
+	float:right;
+	height:400px;
+}
+
+/*************************************************************/
+/* contenuto_bottom_middle
+/*************************************************************/
+#contenuto_bottom_middle{
+	width: 292px;
+	height:400px;
+	margin:0px 292px 0px 303px;
+}

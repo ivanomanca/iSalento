@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE per il blocchetto di NAV_LAT GENERICA grigio
+/*----------------------------------------------------------------------------------------------------*/
+/*TITOLO grigio nel blocchetto generico di navigazione laterale*/
+.nav_lat_titolo_grigio{
+	background:#cccccc url(../Images/nav_lat_titolo_grigio.jpg) no-repeat;  
+	border-bottom:2px solid #989797;
+}
+
+.nav_lat_titolo_grigio h4 a{
+	color:#333333;
+}
+
+/*CORPO grigio nel blocchetto generico di navigazione laterale*/
+.nav_lat_corpo_grigio{
+	background-color:#e5e3e3;
+}

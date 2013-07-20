@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------*/
+/* BLOCCHETTO links
+/*--------------------------------------------------------------*/
+.box_lista_links{
+	font-size:12px;
+	line-height:17px;/*solo per le dimensioni della foto widht:61 height:46*/
+}
+
+.box_lista_links a{/*titolo in grassetto*/
+	font-weight:bold;
+}
+
+	/*****************************************************************/
+	/* BOX CONTENENTE FOTO     
+	/*****************************************************************/
+	.box_foto_lista_links{
+		float:left;
+		margin-right:5px;
+	}
+	
+	.box_foto_lista_links img{
+		display:block;
+		background: #f6f6f6;
+		border:1px solid #ffffff;
+/*		padding: 3px; SOLO PER LE IMMAGINETTE
+		border:1px solid #999999;*/
+	}
+
+/* Colori */
+.box_lista_blu a{
+	color:#0193de;
+	text-decoration: underline;
+}
+
+.box_lista_verde a{
+	color:#26b32e;
+	text-decoration: underline;
+}
+
+.box_lista_rosa a{
+	color:#df4bab;
+	text-decoration: underline;
+}
+
+.box_lista_giallo a{
+	color:#DAAF03;
+	text-decoration: underline;
+}
+/* old
+#contenuto_bottom_left .contenitore_blocchetto_home .corpo_blocchetto .box_lista_links a{
+	color:#0193de;
+	text-decoration: underline;
+}*/
+
+
+/* HOME */
+#contenuto_bottom .box_lista_links{
+	/*font-size:12px;*/
+	/*line-height:17px;*/
+	height:85px;/*REGOLA per stabilire in maniera fissa il num. di righe d abstract */
+	overflow:hidden;/*il contenuto in eccedenza viene nascosto!!!*/
+	margin-bottom:15px;
+	
+}
+
+#contenuto_bottom .box_foto_lista_links img{
+	border:1px solid #999999;
+	display:block;
+	padding:4px;
+	
+}
+
+
+

@@ -1,0 +1,39 @@
+
+
+
+
+/*FORMATTAZIONE SPECIFICA PER UN MODELLO di blocchetto elenco ARANCIONE (Salento)*/
+
+.nav_lat_elenco_arancione{
+	background-color:#ffcc99;
+}
+
+/*.nav_lat_elenco_giallo,.nav_lat_elenco_verde{
+	margin-bottom:20px;
+}*/
+
+
+/*FORMATTAZIONE SPECIFICA PER IL TITOLO*/ 
+ul.nav_lat_elenco_arancione li.nav_lat_titolo_arancione a{ 
+	background: url(../Images/nav_lat_titolo_arancione.jpg) no-repeat #ff6633;  /*da cambiare a seconda della sezione*/
+	border-bottom:2px solid #ff6633;
+	color:#ffffff;/*da cambiare a seconda della sezione*/
+
+}
+
+.nav_lat_elenco_arancione a:link{
+	border-bottom: 1px solid #ff6633;/*da cambiare a seconda della sezione*/
+	color: #cc3300;/*da cambiare a seconda della sezione*/
+}
+
+
+.nav_lat_elenco_arancione a:visited{
+	border-bottom: 1px solid #ff6633;/*da cambiare a seconda della sezione*/
+	background-image:  url("");
+	color: #cc3300;/*da cambiare a seconda della sezione     CAMBIATOOOOOO*/
+}
+
+.nav_lat_elenco_arancione a:hover{
+	border-bottom: 1px solid #ff6633;/*da cambiare a seconda della sezione*/
+	background-color: #FF9966;/*da cambiare a seconda della sezione*/
+}

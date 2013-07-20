@@ -1,0 +1,13 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO colore arancione
+/*************************************************************/
+
+
+.contenitore_blocchetto .intestazione_blocchetto .arancione{
+	background:#bbfbbf url(../Images/intestazione_blocchetto_arancione.jpg) no-repeat top;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto .arancione h2{
+	border-bottom:2px solid #ff6633;
+}
+

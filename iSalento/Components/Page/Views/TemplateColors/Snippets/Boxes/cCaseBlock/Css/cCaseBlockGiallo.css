@@ -1,0 +1,13 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO colore giallo
+/*************************************************************/
+
+
+.contenitore_blocchetto .intestazione_blocchetto .giallo{
+	background:#FCF2CB url(../Images/intestazione_blocchetto_giallo.jpg) no-repeat top;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto .giallo h2{
+	border-bottom:2px solid #FFCC00;
+}
+

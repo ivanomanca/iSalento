@@ -1,0 +1,25 @@
+/* CSS template_sezione_giallo  */
+/*************************************************************/
+/* REGOLE GENERALI di TEMPLATE blu                      
+/*************************************************************/
+
+.immagine_body_blu{
+ 	background: url(../Images/linea_grafica_blu.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #7fc2e6;
+	border-right:2px solid #7fc2e6;
+}
+
+#contenuto a,#contenuto h2,#contenuto h3,#contenuto h2 a,#contenuto h3 a{
+	color:#0193de;
+}
+
+#contenuto h1,#contenuto h1 a{ /*TITOLO DELLA PAGINA*/
+	color:#025c8c;
+}
+
+#contenuto a:hover img{
+	border:1px solid #0193de;
+}

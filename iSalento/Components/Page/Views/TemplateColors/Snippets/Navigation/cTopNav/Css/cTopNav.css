@@ -1,0 +1,24 @@
+/*****************************************************************/
+/* BARRA DI NAVIGAZIONE IN ALTO
+/****************************************************************/
+
+/*CONTENITORE_SCATOLA CHE RACCHIUDE LA NAVIGAZIONE IN ALTO*/ 
+#navigazione {
+ border-top:11px solid #000;
+ margin-bottom:41px;
+ padding:1px 0px 0px 188px;
+ z-index:300; 
+}
+
+/*NAVIGAZIONE IN ALTO*/
+#point {
+	display:table;
+	padding:0;
+	margin:0 auto;
+	list-style:none;
+	/*background:#CCCCCC url(../immagini/right2.gif) no-repeat right bottom;*/
+	background:#999 url(../Images/ombra_navigazione1.jpg) repeat-x top;
+	white-space:nowrap;
+	
+	overflow:hidden;/*regola aggiunta*/
+}

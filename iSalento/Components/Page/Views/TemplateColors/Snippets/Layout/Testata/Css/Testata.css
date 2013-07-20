@@ -1,0 +1,47 @@
+
+/*******************************************************/
+/* LOGO: sitename + image
+/*******************************************************/
+#testata{
+	height:254px;
+	position:absolute;
+	top:30px;
+	width:100px;
+}
+
+ #logo{
+ 	/*background: url(../Images/marchio_180_92.gif) no-repeat;*/
+ 	background: transparent url(../Images/logo_160x76.gif) no-repeat;
+	z-index:200;
+	height:100px;
+	position:absolute;
+	top:-13px;
+	width:190px;
+ }
+ 
+/*******************************************************/
+/* NOME DEL SITO ALL'INTERNO DELLA NAVIGAZIONE TOP
+/*******************************************************/
+
+#logo h1 {
+	text-indent:-9999px;
+}
+
+#logo h1 a{
+	width:190px;
+	height:100px;
+	display:block;
+	margin-top:-20px;
+}
+
+
+/*******************************************************/
+/* IMMAGINE DI PRESENTAZIONE DEL SITO NELL'HEADER
+/*******************************************************/
+#testata #image {
+	background: url(../Images/lidopizzo_900_136.jpg) no-repeat;
+	height:136px;
+	width:900px;
+	position: absolute;
+	top:71px;
+}

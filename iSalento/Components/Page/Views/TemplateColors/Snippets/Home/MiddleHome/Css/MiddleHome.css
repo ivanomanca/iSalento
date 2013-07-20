@@ -1,0 +1,24 @@
+/*************************************************************/
+/* contenuto_middle_left
+/*************************************************************/
+#contenuto_middle_left{
+	float:left;
+	width:604px;
+	height:400px;
+	background: url(../Images/ribbon1.png) no-repeat top left;
+	position:relative;
+	top:-22px;
+	left:-6px;
+}
+
+#contenuto_middle_left h1{
+	text-indent:-9999px;
+}
+
+/*cartina salento*/
+#contenuto_middle_left img{
+	position:absolute;
+	left:70px;
+	top:20px;
+	border: 0px; /* toglie il bordo di default dei browsers */
+}

@@ -1,0 +1,56 @@
+/*-------------------------------------------------------------------------------------------*/
+/* BLOCCHETTO DI NAVIGAZIONE LATERALE GENERICO
+/*-------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* REGOLE GENERALI
+/*--------------------------------------------------------------------------------------------*/
+
+/*FORMATTAZIONE GENERALE per il contenitore generico di un blocchetto della navigazione laterale*/ 
+.nav_lat_generica{
+	font-size: 10pt;
+	margin:0px 0px 20px 0px;
+	padding:0; /* elimino i rientri delle liste */
+}
+
+/*FORMATTAZIONE GENERALE PER IL TITOLO*/
+.nav_lat_titolo_generica{
+	font-weight: bold;
+	font-size:12px;
+	height:22px;
+}
+
+.nav_lat_titolo_generica h4{
+	padding-top:3px;
+}
+
+/*FORMATTAZIONE GENERALE PER IL CORPO*/
+.nav_lat_corpo_generica{
+	padding:3px 0px 10px 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* REGOLE SPECIFICHE
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+.nav_lat_generica a:link{
+	display: block;
+	padding: 3px 0px 3px 10px;
+	text-decoration: none;/*toglie le sottolineature ai links, giˆ presente nelle regole generali di a */
+}
+
+.nav_lat_generica a:visited{
+	display: block;
+	padding: 3px 0px 3px 10px;
+}
+
+.nav_lat_generica a:hover{
+	display: block;
+	background-image: none;
+	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+

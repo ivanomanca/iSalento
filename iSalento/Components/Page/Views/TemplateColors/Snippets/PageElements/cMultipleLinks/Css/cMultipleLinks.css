@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------*/
+/* BLOCCHETTO links
+/*--------------------------------------------------------------*/
+.blocchetto_links{
+	margin-top:15px;
+}
+
+.colonna_sx{
+	float:left;
+	width:240px;
+	margin-right:10px;
+}
+
+.colonna_dx{
+	float:left;
+	width:240px;
+}
+
+/** HOME **/
+#contenuto_bottom .blocchetto_links{
+	margin-bottom:5px;
+	margin-top:0px;
+}
+

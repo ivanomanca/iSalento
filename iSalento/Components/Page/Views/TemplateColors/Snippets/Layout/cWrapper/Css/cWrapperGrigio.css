@@ -1,0 +1,14 @@
+/* CSS template_sezione_grigio */
+
+
+/*************************************************************/
+/* REGOLE GENERALI di TEMPLATE grigio                       
+/*************************************************************/
+.immagine_body_grigio {
+	background: url(../Images/linea_grafica_grigio3.jpg) repeat-x #fff;
+}
+
+#testata #image {
+	border-left:2px solid #d2d0d0;
+	border-right:2px solid #d2d0d0;
+}

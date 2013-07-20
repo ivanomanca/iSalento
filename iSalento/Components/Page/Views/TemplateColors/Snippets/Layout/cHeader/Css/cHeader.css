@@ -1,0 +1,12 @@
+/**********************************************************/
+/* HEADER (navigazione Top + Testata)                                  
+/**********************************************************/
+#header {
+	position:absolute;
+	top: 0px;
+	left: 2%;
+	right:2%;
+	width:900px;
+	height:355px;
+	margin:auto;/*background: url(header.jpg) repeat-x #F6F4E4;*/	
+}

@@ -1,0 +1,151 @@
+/*------------------------------------------------------------------------------*/
+/* REGOLE GENERALI (head+body+container)
+/* Regole generali applicate finche' nn si hanno regole specifiche               
+/*------------------------------------------------------------------------------*/
+
+/*************************************************************/
+/* HTML
+/*************************************************************/
+html {
+	width:100%;
+}
+/*************************************************************/
+/* SELETTORE UNIVERSALE
+/*************************************************************/
+* {
+	padding: 0px;
+}
+/*************************************************************/
+/* BODY
+/*************************************************************/
+body {
+	font-family: Helvetica,Verdana,Arial,sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color:#333333;
+	z-index:50;
+	background-attachment: fixed;
+}
+
+/*Sfondo di default*/
+.immagine_body{
+ 	background: url(../Images/linea_grafica_base.jpg) repeat-x #fff;
+}
+
+/*Sfondo per l'home page*/
+.immagine_body_home{
+	background: url(../Images/linea_grafica_homepage1.jpg) repeat-x #fff;
+}
+
+
+/*******************************************************/
+/* CONTAINER: contenitore di tutta la pagina
+/*******************************************************/ 
+#container {
+	width: 900px;
+}
+
+/*************************************************************/
+/* FORMATTAZIONE PER I LINKS  
+/*************************************************************/
+
+/* REGOLE PER TUTTI I LINK IN GENERALE (esterni ed interni) */
+a{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* LINK ESTERNI */
+a:link{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* STILE PER LINK VISITATO */
+a:visited{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+/* STILE PER MOUSE SOPRA AL LINK */
+a:hover{
+		color: #005FA9;
+		text-decoration: underline;
+}
+
+/*bordo dell'immagine*/
+a img{
+	border: 1px solid #ffffff;
+}
+
+/************************************/
+/* FORMATTAZIONE PER I TITOLI       
+/************************************/
+h1 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	color: #334d55;
+	font-size: 140%;
+}
+
+h2 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	color: #334d55;
+	font-size: 120%;
+}
+
+h3 {
+	font-family: Helvetica,Verdana, Arial,sans-serif;
+	color: #334d55;
+	font-size: 110%;
+}
+
+h4 {
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #334d55;
+}
+
+h5 {
+	font-family: Helvetica,Verdana,Arial,sans-serif;
+	font-size: 90%;
+	color: #334d55;
+}
+
+/*************************************************************/
+/* FORMATTAZIONE PER I PARAGRAFI  
+/*************************************************************/
+p{
+	text-align:justify;
+}
+
+
+
+/*******************************************************/
+/* ELENCHI PUNTATI (es: barre di navigazione laterali)    
+/*******************************************************
+ul{
+	list-style-type: square;
+}
+
+ul ul{
+	list-style-type: disc;
+}
+
+ul ul ul{
+ 	list-style-type: none;
+}
+
+
+/*******************************************************/
+/* FORMATTAZIONE PER I FORM (inserimento dati utente)  
+/*******************************************************  
+label {
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: #334d55;
+}
+input {
+	font-family: Arial, sans-serif;
+}
+*/

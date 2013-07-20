@@ -1,0 +1,655 @@
+<?
+// tutte le funzioni snippets su un file per raccoglierle meglio dopo
+/**
+ * Note:
+ * 1. Dare i link con un isp_url object
+ * 2. fare return $this->out($code); dove this è l'oggetto snippet padre
+ * 3. Togliere i nomi "articolo" dalle liste (css)
+ * 4. close div function nel padre e open function con class/div input
+ * 5. I nomi degli oggetti iniziano con la maiuscola, delle config con $_,
+ *    dei files dinamici normalmente con $file
+ */
+//*************************************************************
+
+/**
+ * LAYOUT SNIPPETS
+ *
+ */
+function doctype(){
+	?>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//IT" 
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<?
+}
+
+function openHtml(){
+	?><html xmlns="http://www.w3.org/1999/xhtml"><?
+}
+
+/*
+function openHead(){
+	echo "<head>";
+}
+*/
+openTag(null,null,"head");
+
+function meta($titolo,$keywords,$description){
+	
+}
+
+//! contiene parte di head e apre il body
+function linkRel($cssLayout, $cssSezione, $cssContenuto=null){
+	?>
+	<link rel="stylesheet" href="<?= $cssLayout ?>" type="text/css"/>
+		<style type="text/css">
+			<? 
+			echo("@import url(".$cssSezione.");"); 
+			if($cssContenuto!=null){ // Se è specificato il css di contenuto
+				echo("@import url(".$cssContenuto.");");
+			}
+			?> 
+		</style>
+	<?
+}
+
+/*
+function closeHead(){
+	echo "</head>";
+}
+*/
+closeTag("head");
+
+/*
+function openBody(){
+	echo "<body>";		
+}
+*/
+/**
+ * HEAD FATTO!
+ */
+
+openTag(null,null,"body");
+
+/*
+function openContainer(){
+	?><div id="container"><?
+}
+*/
+openTag("container");
+
+
+/*function openHeader(){
+	?><div id="header"><?
+}*/
+
+openTag("header");
+
+function href(Isp_Url $url, $class=null){
+	$code = "<a class=\"$class\" ";
+	$code .= "href=\"$url->path\">";
+	$code .= $url->title;
+	$code .= "</a>";
+	return $code;
+}
+
+function SubNav($array url){
+	openTag(null,"sub_".$coloreSezione,"ul");
+		openTag("sub_".$coloreSezione."first","","li");
+			href($url);
+		closeTag("li");
+		
+		foreach (array di url sottotab)
+		
+		openTag("sub_".$coloreSezione."last",null,"li");
+			href($url);
+		closeTag("li");
+	closeTag("ul");	
+	
+
+}
+// current= "verde,ecc": if colore sez da link = current stampa current!
+/*
+cNavTopTab($coloreSezione,$currentColor,$url,$sub)
+openTag($coloreSezione,"li");
+href($url);//snippet
+cSubNav($coloreSezione)
+closeTag("li");
+*/
+function navigazioneTop(){
+	?>
+	<div id="navigazione">
+      <ul id="point">
+        <li class="" id="nero"><a class="" href="">HOME</a></li> 
+        <li class="" id="giallo"><a class="" href="">ATTRAZIONI</a>
+          <ul class="sub_giallo">
+            <li class=""><a href="">Discoteche</a></li>
+            <li class=""><a href="">Spiaggie</a></li>
+          </ul>
+        </li>
+        <li class="current" id="verde"><a class="" href="">EVENTI</a>
+          <ul class="sub_verde">
+            <li class="" id="sub_verde_first"><a href="">Calendario</a></li>
+            <li class=""><a href="">Per Categoria</a></li>
+            <li class="current"><a href="">Per Area/Localit√†</a></li>
+            <li class=""><a href="">Per Attrazioni</a></li>
+            <li class="" id="sub_verde_last"><a href="">Per Servizio Specifico</a></li>
+          </ul>
+        </li>
+        <li class="" id="blu"><a class="" href="">FOTO</a>
+          <ul class="sub_blu">
+            <li class=""><a href="">Salento e Localit√†</a></li>
+            <li class=""><a href="">Attrazioni</a></li>
+            <li class=""><a href="">Eventi</a></li>
+            <li class=""><a href="">ArtiAttivisti</a></li>
+          </ul>
+        </li>
+        <li class="" id="arancione"><a class="" href="">AREE</a>
+          <ul class="sub_arancione">
+            <li class=""><a href="">Le Localit√†</a></li>
+            <li class=""><a href="">Come arrivarci</a></li>
+            <li class=""><a href="">Muoversi sul posto</a></li>
+            <li class=""><a href="">Mappa</a></li>
+          </ul>
+        </li>
+        <li class="" id="celeste"><a class="" href="">RUBRICHE</a>
+          <ul class="sub_celeste">
+            <li class=""><a href="">Arte, cultura e storia</a></li>
+            <li class=""><a href="">Notte, musica e divertimenti</a></li>
+            <li class=""><a href="">Mare</a></li>
+            <li class=""><a href="">Sport</a></li>
+            <li class=""><a href="">Natura, paesaggi e parchi</a></li>
+            <li class=""><a href="">Shopping</a></li>
+            <li class=""><a href="">Gastronomia e cucina tipica</a></li>
+            <li class=""><a href="">Folklore e tradizioni</a></li>
+            <li class=""><a href="">Informazioni utili e servizi</a></li>
+          </ul>
+        </li>
+        <li class="" id="rosa"><a class="" href="">ARTIATTIVISTI</a>
+          <ul class="sub_rosa">
+            <li class=""><a href="">Djs</a></li>
+            <li class=""><a href="">Bands e musicisti</a></li>
+          </ul>
+        </li>
+        <li class="" id="grigio"><a class="" href="">INSERISCI</a>
+          <ul class="sub_grigio">
+            <li class=""><a href="">Attrazioni</a></li>
+            <li class=""><a href="">Eventi</a></li>
+            <li class=""><a href="">Articoli/Rubriche</a></li>
+            <li class=""><a href="">Foto</a></li>
+            <li class=""><a href="">ArtiAttivisti</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <?
+}
+
+function testata($url180=null){
+	?>
+	<div id="testata">
+      <div id="logo">
+        <h1>iSalento</h1>
+      </div>
+      <div id="image"> </div>
+	</div>
+	<?
+}
+
+function closeHeader(){
+	?></div><?
+}
+
+/**
+ * HEADER FATTO
+ */
+function openPaginaCentrale(){
+	?>	
+	<div id="pagina_centrale">
+		<div id="tl"></div>
+		<div id="tr"></div>
+	<?	
+}
+
+ <ul class="nav_lat_elenco nav_lat_elenco_verde">
+        <li class="nav_lat_titolo_verde"><a href="#">Attrazioni</a></li>
+        <li><a href="#">Discoteche</a></li>
+        <li><a href="#">Spiaggie</a></li>
+      </ul>
+      
+function SideListNav($array url,$colore){
+	openTag(null,"nav_lat_elenco nav_lat_elenco_".$colore,"ul");
+		
+		$this->li($this->urlArray[0],null,""); // titolo		
+		
+		foreach (array di url sottotab)
+		
+	closeTag("ul");	
+}
+
+function navigazioneLaterale(){
+	?>
+	<div id="navigazione_laterale">
+      <ul class="nav_lat_elenco nav_lat_elenco_verde">
+        <li class="nav_lat_titolo_verde"><a href="#">Attrazioni</a></li>
+        <li><a href="#">Discoteche</a></li>
+        <li><a href="#">Spiaggie</a></li>
+      </ul>
+      <ul class="nav_lat_elenco nav_lat_elenco_grigio_chiaro">
+        <li class="nav_lat_titolo_grigio_chiaro"><a href="#">Collabora anche tu</a></li>
+        <li><a href="#">Proponi un articolo</a></li>
+        <li><a href="#">Aggiungi foto</a></li>
+        <li><a href="#">Segnala evento</a></li>
+        <li><a href="#">Segnala attrazioni</a></li>
+        <li><a href="#">Le tue idee e commenti</a></li>
+      </ul>
+      <ul class="nav_lat_elenco nav_lat_elenco_grigio_chiaro">
+        <li class="nav_lat_titolo_grigio_chiaro"><a href="#">Utenti</a></li>
+        <li><a href="#">Iscrivimi</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Username</a></li>
+        <li><a href="#">Password</a></li>
+      </ul>
+    </div>
+	 <?
+}
+	
+function navigazioneExtra(){
+	?>
+	 <div id="extra">
+      <ul class="nav_lat_elenco nav_lat_elenco_grigio_chiaro" >
+        <li class="nav_lat_titolo_grigio_chiaro"><a href="#">Attrazioni</a></li>
+        <li><a href="#">Test1</a></li>
+        <li><a href="#">Test2</a></li>
+        <li><a href="#">Test3</a></li>
+        <li><a href="#">Test4</a></li>
+        <li><a href="#">Test5</a></li>
+        <li><a href="#">Test6</a></li>
+        <li><a href="#">Test7</a></li>
+        <li><a href="#">Test8</a></li>
+        <li><a href="#">Test9</a></li>
+        <li><a href="#">Test10</a></li>
+      </ul>
+      <ul class="nav_lat_elenco nav_lat_elenco_grigio_chiaro">
+        <li class="nav_lat_titolo_grigio_chiaro"><a href="#">section2</a></li>
+        <li><a href="#">Test11</a></li>
+        <li><a href="#">Test12</a></li>
+        <li><a href="#">Test13</a></li>
+        <li><a href="#">Test14</a></li>
+        <li><a href="#">Test15</a></li>
+        <li><a href="#">Test16</a></li>
+      </ul>
+    </div>
+	   <?
+}
+
+function openPaginaCentraleSenzaNavigazioni(){
+	?><div id="pagina_centrale_senza_navigazioni"><?
+}
+
+function breadcrumb(/*array isp_link objects*/){
+	?>
+	<div id="percorso_pagina_corrente"> 
+	  <a href="../../new grafica/new template/base.php" >Base</a> > 
+	  <a href="../../new grafica/new template/base1.php" >Base 1</a> 
+	</div>
+	<?
+}
+
+function openContenuto(){
+	?><div id="contenuto"><?	
+}
+
+// Contenuto snippets here!
+
+function closeContenuto(){
+	echo "</div>";
+}
+
+function closePaginaCentraleSenzaNavigazioni(){
+	echo "</div>";
+}
+
+function footer(){
+	?>
+	Questo è il footer snippet!
+	<div id="footer"> 
+	    	<a href="#">iSalento project</a> | 
+	    	<a href="#">Mappa del sito</a> | 
+	    	<a href="#">Contatti</a> | &amp; copy; 2007 iSalento London 
+	</div>
+	<?
+}
+
+function closePaginaCentrale(){
+	echo "</div>";
+}
+
+function closeContainer(){
+	echo "</div>";
+}
+
+function closeBody(){
+	echo "</body>";		
+}
+
+function closeHtml(){
+	echo "</html>";		
+}
+
+//*************************************************************
+/**
+ * LISTA SNIPPETS
+ */
+
+
+function titoloPagina($titolo){
+	?>
+	<div class="titolo_pagina">
+       <h1><?= $titolo; ?></h1>
+    </div>
+    <?
+} 
+
+function descrizionePagina($descrizione){
+	?> 
+	<div class="descrizione_pagina"> 
+		<?= $descrizione; ?>
+	</div>
+	<?
+}
+
+/**
+ * Enter description here...
+ *
+ * @param string $type= "_left", "_both"
+ */
+function clear($type=null){
+	echo "<div class=\"clear_$type\">&nbsp;</div>" ;
+}
+
+/**
+ * BOX LISTA
+ *
+ * @param unknown_type $page2Link
+ * @param unknown_type $fotoLink
+ */
+//! css: cambia nome id articolo!
+function boxFotoLista($page2Link,$fotoLink){
+	?>
+	<div class="box_foto_lista_articolo"> 
+      	<a href="<?= $page2Link->path ?>">
+      		<img alt="<?= $fotoLink->fotoAlt ?>" 
+				 title="<?= $fotoLink->title ?>" 
+				 src="<?= $fotoLink->path ?>"></img>
+      	</a> 
+    </div>
+    <?
+}
+
+function boxTitoloLista($page2Link){
+	?>
+	<h3> <a href="<?= $page2Link->path ?>"><?= $page2Link->title ?></a> </h3>
+	<?    
+}
+
+function boxAbstractLista($abstract){
+	echo "<p> $abstract </p>";
+}
+
+/**
+ * Interno del box: foto, titolo e abstract
+ *
+ * @param unknown_type $page2Link
+ * @param unknown_type $fotoLink
+ * @param unknown_type $abstract
+ */
+function BoxCntLista($page2Link, $fotoLink, $abstract,$_leggiArticolo=null){
+	boxFotoLista($page2Link, $fotoLink);
+    boxTitoloLista($page2Link);
+    boxAbstractLista($abstract);
+    if(isset($_leggiArticolo)){?>
+	   <div class="leggi_articolo"> 
+	   		<a href="<?= $page2Link->path?>">Leggi articolo ...</a> 
+	   	</div>
+	<?}
+}
+
+
+/**
+ * LISTA
+ */
+function SeparatoreLista($leftLink=null,$rightLink=null){
+	?>
+	<div class="separatore">
+	  <?if(isset($leftLink)){?>
+			<div class="left">
+		      <h3><?= $leftLink->title?></h3>
+		    </div>	
+	  <?}if(isset($rightLink)){?>
+		    <span class="right">
+			  <a href="<?= $rightLink->path ?>"><?= $rightLink->title?></a>
+			</span> 
+	  <?}?>
+    </div>
+    <?
+}
+
+/**
+ * Partial loop, fare un oggetto??
+ *
+ */
+// css: cambia nome id articolo
+function openLista(){
+	?><div class="lista_articoli"><?
+}
+
+// Snippet Composto
+//!box_lista_articolo togliere articolo e genarlizzare il case per box lista
+function ListItem($SeparatoreLista, $BoxCntLista, $_nbsp=null){
+	
+	SeparatoreLista($leftLink=null,$rightLink=null);
+	?>	
+	<div class="box_lista_articolo">
+	<?  BoxCntLista($page2Link, $fotoLink, $abstract,$_leggiArticolo=null);
+		if(isset($_nbsp)){ echo "<div>&nbsp;</div>"; }
+		clear("left");
+	?>	
+	</div>
+          
+<?
+}
+
+function closeLista(){
+	echo "</div>";
+}
+
+
+/**
+ * FILTRI
+ */
+
+/**
+ * BLOCCHETTO
+ *
+ */
+
+function openContenitoreBlocchetto(){
+	$code = "<div class=\"contenitore_blocchetto\">";
+	echo $code;
+}
+
+function intestazioneBlocchetto($titolo,$_speciale=null,$_extraClassName=null){
+	$code = "<div ";
+	
+	// Speciale o intestazione normale
+	if(isset($_speciale)){
+		$code .= "id=\"titolo_speciale\">";	
+	}else{
+		$code .= "class=\"intestazione_blocchetto\">";
+	}
+	
+	// Wrappa con la classe extra
+	if(isset($_extraClassName)){$code .= "<div class=\"$_extraClassName\">";}
+		$code .= "<h2> $titolo </h2>";
+	if(isset($_extraClassName)){$code .= "</div>";}
+	$code .= "</div>";
+	
+	echo $code;
+
+}
+
+function openCorpoBlocchetto($innerClassName=null){
+	$code = "<div class=\"corpo_blocchetto\">";
+	echo $code;
+}
+
+function closeCorpoBlocchetto(){
+	$code = "</div>";
+	echo $code;
+}
+
+function closeContenitoreBlocchetto(){
+	$code = "</div>";
+	echo $code;
+}
+
+/**
+ * tipi di corpo blocchetti
+ */
+function ricercaSingola(){
+	?><div class="ricerca_singola"> <span>Mostra articoli solo per:</span>
+              <select name="choice">
+                <option selected="selected" label="none" value="none"> none </option>
+                <optgroup label="Group 1">
+                <option label="cg1a" value="val_1a">Selection group 1a </option>
+                <option label="cg1b" value="val_1b">Selection group 1b </option>
+                <option label="cg1c" value="val_1c">Selection group 1c </option>
+                </optgroup>
+                <optgroup label="Group 2">
+                <option label="cg2a" value="val_2a">Selection group 2a </option>
+                <option label="cg2b" value="val_2a">Selection group 2b </option>
+                </optgroup>
+                <optgroup label="Group 3">
+                <option label="cg3a" value="val_3a">Selection group 3a </option>
+                <option label="cg3a" value="val_3a">Selection group 3b </option>
+                </optgroup>
+              </select>
+              <span>
+              <input id="button1" type="submit" value="Vai" />
+              </span> </div>
+      <?
+}             
+/**
+ * Speciale
+ *
+ * @param string $_fotoGrande = "foto_grande"
+ */
+function Speciale($_fotoGrande=null){
+	$code = "<div id=\"speciale\" class=\"$_fotoGrande\">";
+	$code .= BoxCntLista($page2Link, $fotoLink, $abstract,$_leggiArticolo=null);
+	$code .= "</div>";
+	
+	echo $code;
+}
+
+function blocchettoLinks(){
+	?><div class="blocchetto_links">
+        <div class="colonna_sx">
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href="../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_loungelover.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.html">Traditional London Pubs </a><br/>
+                  Sup a pint of ale in one of London's atmospheric
+                  <div class="clear_left">&nbsp;</div>
+                </div>
+                
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href=".../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_ice_bar.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.html">Traditional London Pubs </a><br/>
+                  Sup a pint of ale in one of London's atmospheric
+                  <div class="clear_left">&nbsp;</div>
+                </div>
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href="../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_the_dove.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.html">London Restaurant News </a><br/>
+                  Stay tuned for all the latest London restaurant news </div>
+              </div>
+              <div class="colonna_dx">
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href="../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_ice_bar.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.html">Best Beer Gardens </a> <br/>
+                  It's summer, relax at one of London's beer terraces
+                  <div class="clear_left">&nbsp;</div>
+                </div>
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href="../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_loungelover.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.htmll">Traditional London Pubs </a><br/>
+                  Sup a pint of ale in one of London's atmospheric
+                  <div class="clear_left">&nbsp;</div>
+                </div>
+                <div class="box_lista_links">
+                  <div class="box_foto_lista_links"> <a href="../MODELLO_SCHEDA/modello_scheda.html"><img alt="" title="" src="IMMAGINI/small_the_trafalgar.jpg"></img></a> </div>
+                  <a href="../MODELLO_SCHEDA/modello_scheda.html">Cocktail Bars </a> <br/>
+                  Sip on delish daiquiris and killer martinis in these swish </div>
+              </div>
+              <div class="clear_both"/>
+            </div>
+     <?              
+}
+
+function indiceArticolo(){
+	?>
+	<ul id="indice">
+              <li><a href="#prima_parte">Prima parte</a></li>
+              <li><a href="#seconda_parte">Seconda parte</a></li>
+              <li><a href="#terza_parte">Terza parte</a></li>
+            </ul>
+     <?       
+}
+
+function googleScheda(){
+	?> <div id="googlemap">
+              <form action="#" onsubmit="showAddress(this.address.value); return false">
+                <div id="map" style="width: 494px; height: 250px">Your browser doesn't support Google Maps or Javascript is turned off.</div>
+                <p>
+                  <input type="text" size="60" name="address" value="Melpignano, Lecce" />
+                  <input type="submit" value="Cerca" />
+                </p>
+              </form>
+            </div>
+      <?
+}
+
+function blocchetto4Foto(){
+	?>
+	<div class="blocchetto_4_foto">
+              <p>Piccola descrizione: attrazioni varie, spiaggie, parchi, blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla...</p>
+              <a href=""><img alt="" title="" src="IMMAGINI/small_Salento-Puglia_1.jpg"/></a><a href=""><img alt="" title="" src="IMMAGINI/small_Salento-Puglia_2.jpg"/></a><a href=""><img alt="" title="" src="IMMAGINI/small_Salento-Puglia_3.jpg"/></a><a href=""><img alt="" title="" src="IMMAGINI/small_Salento-Puglia_2.jpg"/></a>
+              <div class="approfondisci"><a href="">vedi altre ...</a></div>
+            </div>
+     <?
+}
+/**
+ * SCHEDA
+ */
+
+function corpoArticolo($testo){
+	$code = "<div class=\"corpo_articolo\">";
+	$code .= "<span id=\"cap\">".$testo[0]."</span>"; // First letter
+	$code .= substr($testo,1);
+	
+	//foreach espansioneArticolo();
+	
+}
+
+function closeCorpoArticolo(){
+	$code = "</div>";
+	echo $codeM
+}
+
+function espansioneArticolo($titolo, $testo){
+	$code = "<h3><a name=\"$titolo\">$titolo</a></h3>";
+	$code .= $testo;
+}
+
+
+?>

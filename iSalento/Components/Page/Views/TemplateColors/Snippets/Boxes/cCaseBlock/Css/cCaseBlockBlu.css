@@ -1,0 +1,13 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO colore blu
+/*************************************************************/
+
+
+.contenitore_blocchetto .intestazione_blocchetto .blu{
+	background:#D0E6F4 url(../Images/intestazione_blocchetto_blu.jpg) no-repeat top;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto .blu h2{
+	border-bottom:2px solid #0193DE;
+}
+

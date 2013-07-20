@@ -1,0 +1,206 @@
+/*************************************************************/
+/* CONTENITORE BLOCCHETTO regole generali
+/*************************************************************/
+.contenitore_blocchetto{
+	padding:0 0 30px 15px;
+	height:auto;
+}
+
+.contenitore_blocchetto .corpo_blocchetto{
+	border:1px solid #e2dede;
+	border-bottom:3px solid #e2dede;
+	background-color:#f7f4f4;
+	margin:-15px 0px 0px -15px;
+	padding:0px 0px 25px 15px;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto{
+	background:#cccccc;
+	margin-left:-15px;
+}
+
+.contenitore_blocchetto h2{
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+
+.contenitore_blocchetto .approfondisci{
+	margin-right:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#555555;
+	float:right;
+}
+
+	
+/*************************************************************/
+/* Contenitore dell'articolo SPECIALE    
+/*************************************************************/
+.contenitore_blocchetto #titolo_speciale h2{
+	margin-left:-15px;
+	background:#cccccc;
+}
+
+.contenitore_blocchetto .corpo_blocchetto .foto_grande{ /*REGOLE INASPETTATE solo per quando si ha la foto grande*/
+	margin-top:25px;
+}
+
+.contenitore_blocchetto .corpo_blocchetto #speciale p{ /*REGOLE INASPETTATE*/
+	margin: -10px 15px 0px 5px;
+	padding-bottom:15px;
+}
+
+		/*************************************************************/
+		/* Contenitore della foto, titolo e sommario     
+		/*************************************************************/
+		.box_lista_articolo{
+			background-color:white;
+			margin:0px 10px 25px 10px;
+		}
+		
+		/**********************************************************************************/
+		/* BOX CONTENENTE FOTO + OMBRA INFERIORE     
+		/**********************************************************************************/
+		.box_foto_lista_articolo{
+			float:left;
+			margin: 0 10px 0px 0px;
+			padding: 0 0 18px 0;
+			/*background: url(../IMMAGINI/ombra_doppia_piccola.jpg) no-repeat bottom center;     MODIFICARE L'IMMAGINE*/
+		}
+		
+		/**************************************************************************/
+		/* FORMATTAZIONE PER L'IMMAGINE DELL'ARTICOLO SE SI VUOLE METTERE L'OMBRA    
+		/**************************************************************************/
+		.box_foto_lista_articolo img{
+			display:block;
+			border: 1px solid #999999;
+			padding: 5px;
+			background: #f6f6f6;
+		}
+
+	
+/*************************************************************/
+/* BLOCCHETTO 4 FOTO 
+/*************************************************************/
+.contenitore_blocchetto .blocchetto_4_foto p{
+	margin-right:15px;/*solo per il blocchetto delle foto altrimenti va messo nel suo contenitore*/
+}
+
+.contenitore_blocchetto .blocchetto_4_foto img{
+	padding:5px;
+	border:1px solid #999999;
+	margin-right:16px;/*solo per il blocchetto delle foto altrimenti va messo nel suo contenitore*/
+}
+
+
+
+/***************************************************************/
+/* CONTENITORE BLOCCHETTO regole specifiche per BLOCCHETTO FOTO
+/***************************************************************
+.contenitore_blocchetto { 
+	width:510px;
+	min-height:131px;/*definisce la lunghezza max del box*
+	height:auto;/*adatta il box al contenuto SOLO allungandolo se necessario*
+}
+	
+/* for Internet Explorer */
+/*\*      
+* .contenitore_blocchetto {
+	height: 131px;/*DA PROVARE*
+}
+/**/
+
+/*mettere 5 sbarre per rimuovere i commenti, importante una va messa dopo "for interner explorer" */
+/*definire l'altezza minima solo per lo speciale altrimenti crea problemi*/
+
+
+
+/*************************************************************/
+/* BLOCCHETTO RICERCA_SINGOLA 
+/*************************************************************/
+.contenitore_blocchetto .corpo_blocchetto .ricerca_singola{
+	margin-top:15px;
+}
+
+/*************************************************************/
+/* BLOCCHETTO GOOGLE MAP 
+/*************************************************************/
+.contenitore_blocchetto .corpo_blocchetto #googlemap #map{
+	border:1px solid #cccccc;
+	margin:15px 0px 20px 0px;
+}
+
+/*************************************************************/
+/* BLOCCHETTO INDICE
+/*************************************************************/
+.contenitore_blocchetto .corpo_blocchetto ul#indice{
+	list-style-type: circle;
+	margin-left:15px;
+}
+
+.contenitore_blocchetto .intestazione_blocchetto span,.contenitore_blocchetto .intestazione_blocchetto #togglelink{
+	color:#555555;
+	font-size:10px;
+}
+
+.contenitore_blocchetto .corpo_blocchetto ul#indice li a{
+	text-decoration:none;
+}
+
+.contenitore_blocchetto .corpo_blocchetto ul#indice li a:hover{
+	text-decoration:underline;
+}
+
+/*--------------------------------------------------------------*/
+/* BLOCCHETTO links
+/*--------------------------------------------------------------*/
+.blocchetto_links{
+	margin-top:15px;
+}
+
+.colonna_sx{
+	float:left;
+	width:240px;
+	margin-right:10px;
+}
+
+.colonna_dx{
+	float:left;
+	width:240px;
+}
+
+.clear_left{  /*VALE PER TUTTI I BLOCCHETTI IN CASO SI VUOLE USARE*/
+	clear:left;
+}
+
+.clear_both{
+	clear:both;
+}
+
+.box_lista_links{
+	font-size:12px;
+	line-height:17px;/*solo per le dimensioni della foto widht:61 height:46*/
+}
+
+.box_lista_links a{/*titolo in grassetto*/
+	font-weight:bold;
+}
+
+	/*****************************************************************/
+	/* BOX CONTENENTE FOTO     
+	/*****************************************************************/
+	.box_foto_lista_links{
+		float:left;
+		margin-right:5px;
+	}
+	
+	.box_foto_lista_links img{
+		display:block;
+		background: #f6f6f6;
+/*		padding: 3px; SOLO PER LE IMMAGINETTE
+		border:1px solid #999999;*/
+	}
+
+
+

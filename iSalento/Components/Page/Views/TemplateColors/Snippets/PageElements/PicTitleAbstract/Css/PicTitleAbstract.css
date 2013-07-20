@@ -1,0 +1,32 @@
+/**********************************************************************************/
+/* BOX CONTENENTE FOTO + OMBRA INFERIORE     
+/**********************************************************************************/
+.in_box_foto{
+	float:left;
+	margin: 0 10px 0px 0px;
+	padding: 0 0 18px 0;	
+}
+
+.ombra_foto_px_100{
+	background: url(../Images/ombra_doppia_piccola.jpg) no-repeat bottom center;
+}
+
+/**************************************************************************/
+/* FORMATTAZIONE PER L'IMMAGINE DELL'ARTICOLO SE SI VUOLE METTERE L'OMBRA    
+/**************************************************************************/
+.in_box_foto img{
+	display:block;
+	border: 1px solid #999999;
+	padding: 5px;
+	background: #f6f6f6;
+}
+
+/**************************/
+/* LEGGI TUTTO   
+/**************************/
+.read_all {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color:#009966;
+	float:right;
+}

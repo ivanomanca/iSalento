@@ -1,0 +1,219 @@
+/**********************************/
+/*	CONTENITORE BLOCCHETTO HOME   */
+/**********************************/
+
+/*REGOLA GENERALE*/
+.contenitore_blocchetto_home{
+	/*padding-left:0px;regola sovrascritta !! */
+	padding:0 0 30px 0px;
+	/*height:auto;*/
+}
+
+/* Titolo bianco */
+.contenitore_blocchetto_home .titolo_speciale h2{
+	color:#ffffff;
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+/*------------------------------------------------------------------------------------------------------*/
+/* CONTENUTO TOP LEFT - blocchetto 5 foto!!!
+/*------------------------------------------------------------------------------------------------------*/
+/* Altezza*/
+#contenuto_top_left .contenitore_blocchetto_home{
+	height:200px;
+}
+/* Intestazione verde old
+#contenuto_top_left .contenitore_blocchetto_home .titolo_speciale_top_left{
+	background: #26b32e url(../Images/titolo_speciale_verde_592X28.jpg) no-repeat top left;
+}*/
+
+/* Intestazione verde */
+#contenuto_top_left .contenitore_blocchetto_home .intestazione_verde{
+	background: #26b32e url(../Images/titolo_speciale_verde_592X28.jpg) no-repeat top left;
+}
+/* Titolo bianco old
+#contenuto_top_left .contenitore_blocchetto_home .titolo_speciale_top_left h2{
+	color:#ffffff;
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}*/
+
+/* Dimensioni e formattazione corpo*/
+#contenuto_top_left .contenitore_blocchetto_home .corpo_blocchetto{
+	margin-left:0px;/*regola sovrascritta !! */
+	padding-top:15px;/*regola sovrascritta !! */
+	height:142px;/*regola aggiuntiva per definire l'altezza del contenitore*/
+	width:575px;/*regola aggiuntiva per definire l'altezza del contenitore*/
+	border:1px solid #e2dede;
+	border-bottom:3px solid #e2dede;
+	background-color:#f7f4f4;
+	margin:-15px 0px 0px 0px;	
+	padding:15px 0px 10px 15px;
+	overflow:hidden;
+}
+/* Immagini 
+#contenuto_top_left .contenitore_blocchetto_home img{
+	border:1px solid #999999;
+	padding:4px;
+	margin-right:8px;/*regola sovrascritta !! 
+}*/
+
+
+/*************************************************************/
+/* APPROFONDISCI
+/*************************************************************/
+/* Top */
+#contenuto_top_left .contenitore_blocchetto_home .corpo_blocchetto .approfondisci{
+	margin:5px 15px;
+	
+}
+
+#contenuto_top_left .contenitore_blocchetto_home .corpo_blocchetto .approfondisci a{
+	text-decoration:underline;
+	color:#26b32e;
+}
+
+/* Bottom*/
+
+#contenuto_bottom .contenitore_blocchetto_home .corpo_blocchetto .approfondisci a{
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:11px;
+	text-decoration:underline;
+	margin:5px 15px;
+	float:right;
+}
+
+#contenuto_bottom .contenitore_blocchetto_home .approfondisci_blu a{
+	color:#0193de;
+}
+
+#contenuto_bottom .contenitore_blocchetto_home .approfondisci_verde a{
+	color:#26b32e;
+}
+
+#contenuto_bottom .contenitore_blocchetto_home .approfondisci_rosa a{
+	color:#df4bab;
+}
+
+#contenuto_bottom .contenitore_blocchetto_home .approfondisci_giallo a{
+	color:#DAAF03;
+}
+
+
+
+
+/*************************************************************/
+/* REGOLE COMUNI tra il  CONTENITORE TOP LEFT e BOTTOM LEFT
+/*************************************************************/
+#contenuto_top_left .contenitore_blocchetto_home a:hover img, #contenuto_bottom_left .contenitore_blocchetto_home a:hover img{
+	border:1px solid #26b32e;
+}
+
+/*************************************************************/
+/*REGOLE GENERALI PER I 3 BOXES DEL CONTENUTO BOTTOM*/
+/*************************************************************/
+#contenuto_bottom .contenitore_blocchetto_home .corpo_blocchetto{
+	margin-left:0px;/*regola sovrascritta !! */
+	height:335px;/*regola aggiuntiva per definire l'altezza del contenitore*/
+	width:275px;/*REGOLA FONDAMENTALE PER RISOLVERE PROBLEMA FLOAT*/
+	overflow:hidden;/*REGOLA FONDAMENTALE PER RISOLVERE PROBLEMA FLOAT*/
+	border:1px solid #e2dede;
+	border-bottom:3px solid #e2dede;
+	background-color:#f7f4f4;
+	margin:-15px 0px 0px 0px;	
+	padding:15px 0px 10px 15px;
+}
+
+#contenuto_bottom .contenitore_blocchetto_home .intestazione_verde{
+	background: #26b32e url(../Images/titolo_speciale_verde_292x28.jpg) no-repeat top left;
+}
+#contenuto_bottom .contenitore_blocchetto_home .intestazione_blu{
+	background: #0193de url(../Images/titolo_speciale_blu_292X28.jpg) no-repeat top left;
+}
+#contenuto_bottom .contenitore_blocchetto_home .intestazione_rosa{
+	background: #df4bab url(../Images/titolo_speciale_rosa_292x28.jpg) no-repeat top left;
+}
+#contenuto_bottom .contenitore_blocchetto_home .intestazione_giallo{
+	background: #ffcc00 url(../Images/titolo_speciale_giallo_292x28.jpg) no-repeat top left;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* CONTENUTO BOTTOM LEFT
+/*------------------------------------------------------------------------------------------------------*/
+/* old
+#contenuto_bottom_left .contenitore_blocchetto_home .intestazione_blu{
+	/*margin-left: 0px;/*regola sovrascritta !! 
+	background: #0193de url(../Images/titolo_speciale_blu_292X28.jpg) no-repeat top left;
+}*/
+/*
+#contenuto_bottom_left .contenitore_blocchetto_home .titolo_speciale_bottom_left h2{
+	color:#FFFFFF;
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+*/
+/*
+#contenuto_bottom_left .contenitore_blocchetto_home .corpo_blocchetto .box_lista_links a{
+	color:#0193de;
+	text-decoration: underline;
+}
+*/
+
+/*------------------------------------------------------------------------------------------------------*/
+/* CONTENUTO BOTTOM MIDDLE
+/*------------------------------------------------------------------------------------------------------*/
+/*Old
+#contenuto_bottom_middle .contenitore_blocchetto_home .intestazione_verde{
+	margin-left: 0px;/*regola sovrascritta !! 
+	background: #26b32e url(../Images/titolo_speciale_verde_292x28.jpg) no-repeat top left;
+}*/
+/*
+#contenuto_bottom_middle .contenitore_blocchetto_home .titolo_speciale_bottom_middle h2{
+	color:#FFFFFF;
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+
+#contenuto_bottom_middle .contenitore_blocchetto_home .corpo_blocchetto .approfondisci a{
+	text-decoration:underline;
+	color:#26b32e;
+}
+
+#contenuto_bottom_middle .contenitore_blocchetto_home .corpo_blocchetto .box_lista_links a{
+	color:#26b32e;
+	text-decoration: underline;
+}
+*/
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* CONTENUTO BOTTOM RIGHT
+/*------------------------------------------------------------------------------------------------------*/
+/*
+#contenuto_bottom_right .contenitore_blocchetto_home .intestazione_rosa{
+	margin-left: 0px;/*regola sovrascritta !! 
+	background: #df4bab url(../Images/titolo_speciale_rosa_292x28.jpg) no-repeat top left;
+}*/
+/*
+#contenuto_bottom_right .contenitore_blocchetto_home .titolo_speciale_bottom_right h2{
+	color:#FFFFFF;
+	padding-left:15px;
+	line-height:28px;
+	margin-top:0px;
+}
+
+#contenuto_bottom_right .contenitore_blocchetto_home .corpo_blocchetto .approfondisci a{
+	text-decoration:underline;
+	color:#df4bab;
+}
+/*
+#contenuto_bottom_right .contenitore_blocchetto_home .corpo_blocchetto .box_lista_links a{
+	color:#df4bab;
+	text-decoration: underline;
+}
+*/
